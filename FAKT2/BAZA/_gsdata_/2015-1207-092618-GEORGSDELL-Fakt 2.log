@@ -1,0 +1,24 @@
+2015-12-07 09:26:19: -- Analysis Started by Analyze And Sync This
+2015-12-07 09:26:20: /bestell.NTX: Ostrzeżenie: Starszy plik zastąpi nowszy
+2015-12-07 09:26:20: /temp3.dbf: Ostrzeżenie: Starszy plik zastąpi nowszy
+2015-12-07 09:26:20: Zmiany: 15, Konflikty: 0, Czas kopiowania: 0, Stan kopiowania: 0/0, Błędy: 0, All: 53
+2015-12-07 09:26:20: Left to Right: Copy File: 15 
+2015-12-07 09:26:21: == Sync Started by Analyze And Sync This
+2015-12-07 09:26:24: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/Ar_nazwa.NTX' -> 'D:/FAKT2/BAZA/Ar_nazwa.NTX'
+2015-12-07 09:26:25: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/Ar_numer.NTX' -> 'D:/FAKT2/BAZA/Ar_numer.NTX'
+2015-12-07 09:26:25: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/Art_Nr.NTX' -> 'D:/FAKT2/BAZA/Art_Nr.NTX'
+2015-12-07 09:26:26: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/art_num.NTX' -> 'D:/FAKT2/BAZA/art_num.NTX'
+2015-12-07 09:26:42: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/artykuly.dbf' -> 'D:/FAKT2/BAZA/artykuly.dbf'
+2015-12-07 09:26:43: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/bestell.NTX' -> 'D:/FAKT2/BAZA/bestell.NTX'
+2015-12-07 09:26:43: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/fa_numer.NTX' -> 'D:/FAKT2/BAZA/fa_numer.NTX'
+2015-12-07 09:26:43: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/fakt_poz.NTX' -> 'D:/FAKT2/BAZA/fakt_poz.NTX'
+2015-12-07 09:26:50: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/FAKTURY.DBF' -> 'D:/FAKT2/BAZA/FAKTURY.DBF'
+2015-12-07 09:26:51: Kopiuj nowy '//192.168.1.20/D/Fakt2/BAZA/SyncToy_2489b426-542a-44a6-8048-466560b5ce8f.dat' -> 'D:/FAKT2/BAZA/SyncToy_2489b426-542a-44a6-8048-466560b5ce8f.dat'
+2015-12-07 09:26:51: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/TEMP.DBF' -> 'D:/FAKT2/BAZA/TEMP.DBF'
+2015-12-07 09:26:51: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/temp3.dbf' -> 'D:/FAKT2/BAZA/temp3.dbf'
+2015-12-07 09:26:52: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/zam.NTX' -> 'D:/FAKT2/BAZA/zam.NTX'
+2015-12-07 09:26:52: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/zam_poz.NTX' -> 'D:/FAKT2/BAZA/zam_poz.NTX'
+2015-12-07 09:27:03: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/ZAMOW.DBF' -> 'D:/FAKT2/BAZA/ZAMOW.DBF'
+2015-12-07 09:27:08: Deleted Recycled: D:/FAKT2/BAZA/_gsdata_/_saved_/ZAMOW2.DBF
+2015-12-07 09:27:09: ===== Synchronizacja ukończona. Czas: 00:00:48, Prędkość: 75,6 KB/s =====, Ilość pozycji zsynchronizowanych OK: 15, błędów: 0
+2015-12-07 09:27:11: 

@@ -1,0 +1,4 @@
+clipper clo /n
+clipper lib /n
+IF NOT ERRORLEVEL 1 RTLINK fi clo, lib, __WAIT_B, c:\clipper5\obj\nt2gr50 lib NT250
+

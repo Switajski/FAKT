@@ -1,0 +1,12 @@
+2015-12-07 16:47:08: -- Analysis Started by Analyze And Sync This
+2015-12-07 16:47:09: /Art_Nr.NTX: Ostrzeżenie: Starszy plik zastąpi nowszy
+2015-12-07 16:47:09: /FAKTURY.DBF: Ostrzeżenie: Starszy plik zastąpi nowszy
+2015-12-07 16:47:09: /temp2.dbf: Ostrzeżenie: Starszy plik zastąpi nowszy
+2015-12-07 16:47:09: Zmiany: 3, Konflikty: 0, Czas kopiowania: 0, Stan kopiowania: 0/0, Błędy: 0, All: 53
+2015-12-07 16:47:09: Left to Right: Copy File: 3 
+2015-12-07 16:47:09: == Sync Started by Analyze And Sync This
+2015-12-07 16:47:10: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/Art_Nr.NTX' -> 'D:/FAKT2/BAZA/Art_Nr.NTX'
+2015-12-07 16:47:17: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/FAKTURY.DBF' -> 'D:/FAKT2/BAZA/FAKTURY.DBF'
+2015-12-07 16:47:17: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/temp2.dbf' -> 'D:/FAKT2/BAZA/temp2.dbf'
+2015-12-07 16:47:18: ===== Synchronizacja ukończona. Czas: 00:00:09, Prędkość: 72,1 KB/s =====, Ilość pozycji zsynchronizowanych OK: 3, błędów: 0
+2015-12-07 16:47:18: 

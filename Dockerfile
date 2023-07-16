@@ -11,21 +11,20 @@ RUN apt install -y libx11-6
 
 RUN apt install -y build-essential
 
-# TODO try dpkg -i /tmp/libpng12.deb from https://gist.github.com/prsanjay/f994e313df665bebcffbd0465b4ff653
-COPY install.sh /
-#debdir is a directory
-COPY debdir /debdir
-RUN chmod +x /install.sh
-CMD ["/install.sh"]
+# TODO try from https://gist.github.com/prsanjay/f994e313df665bebcffbd0465b4ff653
+COPY /debdir/r2017-12-15-18_53_harbour_3.2.0-1_amd64.deb /tmp/r2017-12-15-18_53_harbour_3.2.0-1_amd64.deb
+RUN dpkg -i /tmp/r2017-12-15-18_53_harbour_3.2.0-1_amd64.deb
 
-# RUN git clone XYZ 
-COPY core /core
-WORKDIR "/core"
-RUN make install
+## decomment following lines to install and compile compiler
+# RUN apt install -y git
+# git clone git@github.com:harbour/core.git
+# WORKDIR "/core"
+# RUN make install
 
 # from https://groups.google.com/g/harbour-users/c/eA6AbjJMELs?pli=1
 WORKDIR "/etc/ld.so.conf.d"
 RUN echo "/usr/local/lib/harbour" >> harbour
 RUN ldconfig
 
-WORKDIR "/core"
+COPY FAKT2 /FAKT2
+WORKDIR "/FAKT2"

@@ -1,0 +1,74 @@
+[PROJECT]
+    DEBUG         = yes
+    VERSION       = 2.0
+    OPENFILES     = REO.PRG;RECH_DE.PRG;RACHUNEK.PRG;RACH_ZB.PRG;PREISLST.PRG;plik.prg;LIEFER2.PRG;LIB.PRG;KLIENCI.PRG;INTR_PL.PRG;INTR_DE.PRG;FAKT.PRG;ARTYKULY.PRG;ARCHZAM.PRG;ARCHIWUM.PRG
+    PROJECT.XPJ
+
+[PROJECT.XPJ]
+    FAKT.EXE
+
+[FAKT.EXE]
+    COMPILE       = xpp
+    COMPILE_FLAGS = /ga /q
+    DEBUG_SAVE    = yes
+    GUI           = no
+    LINKER        = alink
+    LINK_FLAGS    = 
+    RC_COMPILE    = arc
+    RC_FLAGS      = /v
+    BREAKPOINT    = KLIENCI.PRG:2=1@.T.@1@-1@1@.T.@0@@
+// $START-AUTODEPEND
+    STD.CH
+    SET.CH
+    NATMSG.CH
+    GET.CH
+    PROMPT.CH
+    MEMVAR.CH
+    COLLAT.CH
+    DEF.CH
+    ARCHIWUM.obj
+    ARCHZAM.obj
+    ARTYKULY.obj
+    FAKT.obj
+    INTR_DE.obj
+    INTR_PL.obj
+    KLIENCI.obj
+    LIB.obj
+    LIEFER2.obj
+    PLIK.obj
+    PREISLST.obj
+    RACH_ZB.obj
+    RACHUNEK.obj
+    RECH_DE.obj
+    REO.obj
+    USTAW.obj
+    WCZYTAJ1.obj
+    ZALACZ_2.obj
+    ZAM_NZ.obj
+    ZAMOW.obj
+    ZESTAW.obj
+    ZESTAWD.obj
+// $STOP-AUTODEPEND
+    ARCHIWUM.PRG
+    ARCHZAM.PRG
+    ARTYKULY.PRG
+    FAKT.PRG
+    INTR_DE.PRG
+    INTR_PL.PRG
+    KLIENCI.PRG
+    LIB.PRG
+    LIEFER2.PRG
+    PLIK.PRG
+    PREISLST.PRG
+    RACH_ZB.PRG
+    RACHUNEK.PRG
+    RECH_DE.PRG
+    REO.PRG
+    USTAW.PRG
+    WCZYTAJ1.PRG
+    ZALACZ_2.PRG
+    ZAM_NZ.PRG
+    ZAMOW.PRG
+    ZESTAW.PRG
+    ZESTAWD.PRG
+

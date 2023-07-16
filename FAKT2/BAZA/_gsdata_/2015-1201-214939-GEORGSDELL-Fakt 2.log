@@ -1,0 +1,19 @@
+2015-12-01 21:49:41: -- Analysis Started by Analyze And Sync This
+2015-12-01 21:49:42: /Art_Nr.NTX: Ostrzeżenie: Starszy plik zastąpi nowszy
+2015-12-01 21:49:42: /TEMP.DBF: Ostrzeżenie: Starszy plik zastąpi nowszy
+2015-12-01 21:49:42: Zmiany: 11, Konflikty: 0, Czas kopiowania: 0, Stan kopiowania: 0/0, Błędy: 0, All: 52
+2015-12-01 21:49:42: Left to Right: Copy File: 11 
+2015-12-01 21:49:42: == Sync Started by Analyze And Sync This
+2015-12-01 21:49:43: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/Art_Nr.NTX' -> 'D:/FAKT2/BAZA/Art_Nr.NTX'
+2015-12-01 21:49:43: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/art_num.NTX' -> 'D:/FAKT2/BAZA/art_num.NTX'
+2015-12-01 21:49:44: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/bestell.NTX' -> 'D:/FAKT2/BAZA/bestell.NTX'
+2015-12-01 21:49:44: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/fa_numer.NTX' -> 'D:/FAKT2/BAZA/fa_numer.NTX'
+2015-12-01 21:49:45: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/fakt_poz.NTX' -> 'D:/FAKT2/BAZA/fakt_poz.NTX'
+2015-12-01 21:49:52: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/FAKTURY.DBF' -> 'D:/FAKT2/BAZA/FAKTURY.DBF'
+2015-12-01 21:49:52: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/TEMP.DBF' -> 'D:/FAKT2/BAZA/TEMP.DBF'
+2015-12-01 21:49:53: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/temp3.dbf' -> 'D:/FAKT2/BAZA/temp3.dbf'
+2015-12-01 21:49:53: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/zam.NTX' -> 'D:/FAKT2/BAZA/zam.NTX'
+2015-12-01 21:49:54: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/zam_poz.NTX' -> 'D:/FAKT2/BAZA/zam_poz.NTX'
+2015-12-01 21:50:02: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/ZAMOW.DBF' -> 'D:/FAKT2/BAZA/ZAMOW.DBF'
+2015-12-01 21:50:04: ===== Synchronizacja ukończona. Czas: 00:00:22, Prędkość: 74,7 KB/s =====, Ilość pozycji zsynchronizowanych OK: 11, błędów: 0
+2015-12-01 21:50:04: 

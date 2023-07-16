@@ -1,0 +1,32 @@
+2015-12-07 14:19:06: -- Analysis Started by Analyze And Sync This
+2015-12-07 14:19:08: /Art_Nr.NTX: Ostrzeżenie: Starszy plik zastąpi nowszy
+2015-12-07 14:19:08: /bestell.NTX: Ostrzeżenie: Starszy plik zastąpi nowszy
+2015-12-07 14:19:08: /kl_numer.NTX: Ostrzeżenie: Starszy plik zastąpi nowszy
+2015-12-07 14:19:08: /KLIENCI.DBF: Ostrzeżenie: Starszy plik zastąpi nowszy
+2015-12-07 14:19:08: /Mag_Nazw.NTX: Ostrzeżenie: Starszy plik zastąpi nowszy
+2015-12-07 14:19:08: /MAGAZYN.DBF: Ostrzeżenie: Starszy plik zastąpi nowszy
+2015-12-07 14:19:08: /Ort.NTX: Ostrzeżenie: Starszy plik zastąpi nowszy
+2015-12-07 14:19:08: /temp3.dbf: Ostrzeżenie: Starszy plik zastąpi nowszy
+2015-12-07 14:19:08: Zmiany: 18, Konflikty: 0, Czas kopiowania: 0, Stan kopiowania: 0/0, Błędy: 0, All: 53
+2015-12-07 14:19:08: Left to Right: Copy File: 18 
+2015-12-07 14:19:08: == Sync Started by Analyze And Sync This
+2015-12-07 14:19:11: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/Ar_nazwa.NTX' -> 'D:/FAKT2/BAZA/Ar_nazwa.NTX'
+2015-12-07 14:19:12: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/Ar_numer.NTX' -> 'D:/FAKT2/BAZA/Ar_numer.NTX'
+2015-12-07 14:19:13: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/Art_Nr.NTX' -> 'D:/FAKT2/BAZA/Art_Nr.NTX'
+2015-12-07 14:19:13: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/art_num.NTX' -> 'D:/FAKT2/BAZA/art_num.NTX'
+2015-12-07 14:19:29: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/artykuly.dbf' -> 'D:/FAKT2/BAZA/artykuly.dbf'
+2015-12-07 14:19:30: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/bestell.NTX' -> 'D:/FAKT2/BAZA/bestell.NTX'
+2015-12-07 14:19:30: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/fa_numer.NTX' -> 'D:/FAKT2/BAZA/fa_numer.NTX'
+2015-12-07 14:19:31: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/fakt_poz.NTX' -> 'D:/FAKT2/BAZA/fakt_poz.NTX'
+2015-12-07 14:19:38: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/FAKTURY.DBF' -> 'D:/FAKT2/BAZA/FAKTURY.DBF'
+2015-12-07 14:19:38: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/kl_numer.NTX' -> 'D:/FAKT2/BAZA/kl_numer.NTX'
+2015-12-07 14:19:38: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/KLIENCI.DBF' -> 'D:/FAKT2/BAZA/KLIENCI.DBF'
+2015-12-07 14:19:39: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/Mag_Nazw.NTX' -> 'D:/FAKT2/BAZA/Mag_Nazw.NTX'
+2015-12-07 14:19:39: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/MAGAZYN.DBF' -> 'D:/FAKT2/BAZA/MAGAZYN.DBF'
+2015-12-07 14:19:39: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/Ort.NTX' -> 'D:/FAKT2/BAZA/Ort.NTX'
+2015-12-07 14:19:39: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/temp3.dbf' -> 'D:/FAKT2/BAZA/temp3.dbf'
+2015-12-07 14:19:40: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/zam.NTX' -> 'D:/FAKT2/BAZA/zam.NTX'
+2015-12-07 14:19:40: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/zam_poz.NTX' -> 'D:/FAKT2/BAZA/zam_poz.NTX'
+2015-12-07 14:19:50: Nadpisz '//192.168.1.20/D/Fakt2/BAZA/ZAMOW.DBF' -> 'D:/FAKT2/BAZA/ZAMOW.DBF'
+2015-12-07 14:19:50: ===== Synchronizacja ukończona. Czas: 00:00:42, Prędkość: 75,7 KB/s =====, Ilość pozycji zsynchronizowanych OK: 18, błędów: 0
+2015-12-07 14:19:51: 

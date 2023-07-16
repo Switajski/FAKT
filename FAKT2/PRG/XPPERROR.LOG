@@ -1,0 +1,32 @@
+     
+     ------------------------------------------------------------------------------     
+     ERROR LOG of "C:\FAKT2\PRG\FAKT.EXE" Date: 23.05.2021 20:13:29     
+          
+     Xbase++ version     : Xbase++ (R) Version 1.90.320     
+     Operating system    : Windows XP 05.01 Build 02600 Dodatek Service Pack 3     
+     ------------------------------------------------------------------------------     
+     oError:args         :     
+               -> VALTYPE: C VALUE: \\mag2\Pozycja.NTX     
+               -> VALTYPE: C VALUE: pos     
+               -> VALTYPE: B VALUE: {|| pos}     
+               -> VALTYPE: U VALUE: NIL     
+     oError:canDefault   : Y     
+     oError:canRetry     : Y     
+     oError:canSubstitute: N     
+     oError:cargo        : NIL     
+     oError:description  : File can not be created     
+     oError:filename     :      
+     oError:genCode      :         70     
+     oError:operation    : DbCreateIndex     
+     oError:osCode       :          0     
+     oError:severity     :          2     
+     oError:subCode      :       8999     
+     oError:subSystem    : BASE     
+     oError:thread       :          1     
+     oError:tries        :          1     
+     ------------------------------------------------------------------------------     
+     CALLSTACK:     
+     ------------------------------------------------------------------------------     
+     Called from CZYSTKA2(504)     
+     Called from MAIN(141)     
+     
