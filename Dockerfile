@@ -26,6 +26,6 @@ WORKDIR "/etc/ld.so.conf.d"
 RUN echo "/usr/local/lib/harbour" >> harbour
 RUN ldconfig
 
-COPY FAKT2 /FAKT2
-WORKDIR "/FAKT2/PRG"
-RUN hbmk2 FAKT.PRG
+COPY nowe-wyroby /nowe-wyroby
+WORKDIR "/nowe-wyroby"
+RUN hbmk2 srednie.prg
