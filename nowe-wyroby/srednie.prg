@@ -25,6 +25,18 @@ IF LASTKEY() == 27
 ENDIF
 Wynik := SredCzas(NumerWyrobu)
 ? "Czas Sredni: "+ STR(wynik,15,2)
+
+// moze https://harbour.github.io/doc/clc53.html#dbeval ?
+USE archiv2 NEW
+   AVERAGE Ilosc TO tIlosc FOR wyrob = "P2x-szal"
+   AVERAGE CzasOper TO tCzasOper FOR wyrob = "P2x-szal"
+   tIlosc/tCzasOper TO sredni FOR wyrob = "P2x-szal"
+
+? ''
+? 'total czas: '+ STR(tCzasOper)
+? 'total ilosc: '+ STR(tIlosc)
+? 'total czas / ilosc: '+ STR(tIlosc/tCzasOper)
+
 RETURN
 
 FUNCTION SredCzas( NumerWyrobu )
@@ -48,15 +60,18 @@ BiezacaIlosc  := 0  //Ilosc
 
    DO WHILE .T.
 
+      Operacja := Array()
+
       IF ALLTRIM(archiv2->Wyrob) <>  ALLTRIM(NumerWyrobu)
          EXIT
       ENDIF
 
       IF archiv2->Operacja <> NumerOperacji      //Nowa Operacja
-
+         
          CzasSredniOperacji := 0 //BiezaceOperacje/BiezacaIlosc
          BiezacaIlosc       := 0 //archiv2->Ilosc
          BiezaceOperacje    := 0 //archiv2->CzasOper
+         // ? 'nowa opearcja '+STR(archiv2->Operacja)+STR()
 
       ENDIF
 
@@ -64,10 +79,6 @@ BiezacaIlosc  := 0  //Ilosc
       BiezaceOperacje    := BiezaceOperacje + archiv2->CzasOper
       BiezacaIlosc       := BiezacaIlosc    + archiv2->Ilosc
 //      CzasSredniOperacji := BiezaceOperacje/BiezacaIlosc
-
-
-
-
 //Ostatniego rekordu nie czyta do sredniego czasu wyrobu, bo wyrzuci z petli
 
       NumerOperacji     := archiv2->Operacja
@@ -75,6 +86,7 @@ BiezacaIlosc  := 0  //Ilosc
       IloscNaRecord     := archiv2->Ilosc
       NumerOperacji     := archiv2->Operacja
       SKIP
+
       CzasSredniOperacji := BiezaceOperacje/BiezacaIlosc
       SredniCzasWyrobu   := SredniCzasWyrobu + CzasSredniOperacji  
       ? NumerWyrobu+ STR(NumerOperacji,4,0)+ ' Ilosc: '+STR(BiezacaIlosc,6,0)+'  BiezaceOperacje '+STR(BiezaceOperacje,10,2)+' Sr.CzasWyrobu:'+STR(SredniCzasWyrobu,9,2)
@@ -95,3 +107,9 @@ USE
 //ENDIF
 
 RETURN (SredniCzasWyrobu)
+
+// 5 stk / 45 min => 9  min
+// 5 stk / 5 min  => 1  min
+// 5 stk / 5 min  => 1  min
+// =========================
+//                => 11 min
