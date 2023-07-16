@@ -78,8 +78,8 @@ DO WHILE .T.
    @  9,45 SAY "archiwowanie wysylek.......(14)"
    @ 10,45 SAY "archiwowanie zamowien......(15)"
    @ 11,45 SAY "rozliczanie zamowien.......(16)"
-   @ 12,45 SAY "plik zamówienia............(17)"
-   @ 13,45 SAY "wczytaj zamówienie.........(18)"
+   @ 12,45 SAY "plik zamï¿½wienia............(17)"
+   @ 13,45 SAY "wczytaj zamï¿½wienie.........(18)"
    @ 14,45 SAY "usuwanie starych artykulow.(19)"
    @ 19,45 SAY "zakonczyc program...........(0)"
    @ 22,45 SAY "Wybierz opcje............" GET odpow PICTURE '@K'
@@ -96,20 +96,20 @@ DO WHILE .T.
 
    DO CASE
       CASE odpow == '1'
-         DO artykuly
+         DO ARTYKULY
       CASE odpow == '2'
-         DO klienci
+         DO KLIENCI
       CASE odpow == '3'
-         DO rachunek
+         DO RACHUNEK
       CASE odpow == '4'
-         DO zamow
+         DO ZAMOW
 
       CASE odpow == '5'
-         DO intr_PL
+         DO INTR_PL
       CASE odpow == '6'
-         DO intr_DE
+         DO INTR_DE
       CASE odpow == '7'
-         DO Liefer2
+         DO LIEFER2
       CASE odpow == '8'
          DO rach_zb
          DO zestaw
@@ -117,15 +117,15 @@ DO WHILE .T.
             DO zalacz_2
          ENDIF
       CASE odpow == '9'
-         DO rech_de
+         DO RECH_DE
       CASE odpow == '10'
-         DO preislst
+         DO PREISLST
       CASE odpow == '11'
-         DO ZestawD
+         DO ZESTAWD
       CASE odpow == '12'
          DO ustaw
       CASE odpow == '13'
-         DO reo
+         DO REO
       CASE odpow == '14'
          DO ArchZam
       CASE odpow == '15'

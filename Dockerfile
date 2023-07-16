@@ -1,5 +1,5 @@
 # docker build . --tag "harbour-runtime"
-# docker run -it harbour-runtime /bin/bash
+# docker run -it harbour-runtime /FAKT2/PRG/ARTYKULY
 FROM --platform=linux/amd64 debian
 
 # RUN apt update && apt install -y libgpm2\ libncurses5\ libslang2\ libtinfo5\ libx11-6
@@ -28,5 +28,4 @@ RUN ldconfig
 
 COPY FAKT2 /FAKT2
 WORKDIR "/FAKT2/PRG"
-RUN hbmk2 ARTYKULY.PRG
-RUN ./ARTYKULY
+RUN hbmk2 FAKT.PRG
