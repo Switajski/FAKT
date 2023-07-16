@@ -15,16 +15,16 @@ NumerWyrobu := SPACE(8)
 USE archiv2  NEW
 //USE wyroby   NEW
 NumerWyrobu := 'P2x-szal'
-@  7,9    SAY "                                                        "
-@  9,9    SAY "Numer wyrobu......" GET NumerWyrobu //VALID DBSEEK(m->numer_wy)
-READ
+// @  7,9    SAY "                                                        "
+// @  9,9    SAY "Numer wyrobu......" GET NumerWyrobu //VALID DBSEEK(m->numer_wy)
+// READ
 
 IF LASTKEY() == 27
    USE
    RETURN
 ENDIF
 Wynik := SredCzas(NumerWyrobu)
-ALERT("Czas Sredni: "+ STR(wynik,15,2))
+? "Czas Sredni: "+ STR(wynik,15,2)
 RETURN
 
 FUNCTION SredCzas( NumerWyrobu )
@@ -77,7 +77,7 @@ BiezacaIlosc  := 0  //Ilosc
       SKIP
       CzasSredniOperacji := BiezaceOperacje/BiezacaIlosc
       SredniCzasWyrobu   := SredniCzasWyrobu + CzasSredniOperacji  
-      Alert(NumerWyrobu+ STR(NumerOperacji,4,0)+ ' Ilosc: '+STR(BiezacaIlosc,6,0)+'  BiezaceOperacje '+STR(BiezaceOperacje,10,2)+' Sr.CzasWyrobu:'+STR(SredniCzasWyrobu,9,2))
+      ? NumerWyrobu+ STR(NumerOperacji,4,0)+ ' Ilosc: '+STR(BiezacaIlosc,6,0)+'  BiezaceOperacje '+STR(BiezaceOperacje,10,2)+' Sr.CzasWyrobu:'+STR(SredniCzasWyrobu,9,2)
    ENDDO
 ELSE
    Alert( "Robocizma nie znaleziona" , ;
