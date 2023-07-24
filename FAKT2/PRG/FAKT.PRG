@@ -1,6 +1,9 @@
+
 PROCEDURE Main
 PRIVATE odpow
 PUBLIC Nr_Fakt, Faktor, Pfad, filter, path0, path1, path2, path3, path4, path5, path6, path7, Rachunek
+   
+#include "LIB.prg"
 
 SET DATE TO GERMAN
 SET DELETED ON

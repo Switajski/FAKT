@@ -1,5 +1,4 @@
 # docker build . --tag "harbour-runtime"
-# docker run -it harbour-runtime /FAKT2/PRG/ARTYKULY
 FROM --platform=linux/amd64 debian
 
 # RUN apt update && apt install -y libgpm2\ libncurses5\ libslang2\ libtinfo5\ libx11-6
@@ -15,8 +14,14 @@ RUN apt install -y build-essential
 COPY /debdir/r2017-12-15-18_53_harbour_3.2.0-1_amd64.deb /tmp/r2017-12-15-18_53_harbour_3.2.0-1_amd64.deb
 RUN dpkg -i /tmp/r2017-12-15-18_53_harbour_3.2.0-1_amd64.deb
 
+# tools convenient for command line
+RUN apt install -y git
+RUN git config --global user.email "user@harbour-runtime"
+RUN git config --global user.name "user@harbour-runtime"
+
+RUN apt install -y vim
+
 ## decomment following lines to install and compile compiler
-# RUN apt install -y git
 # git clone git@github.com:harbour/core.git
 # WORKDIR "/core"
 # RUN make install
@@ -26,6 +31,4 @@ WORKDIR "/etc/ld.so.conf.d"
 RUN echo "/usr/local/lib/harbour" >> harbour
 RUN ldconfig
 
-COPY nowe-wyroby /nowe-wyroby
-WORKDIR "/nowe-wyroby"
-RUN hbmk2 srednie.prg
+WORKDIR "/"
