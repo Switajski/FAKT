@@ -101,7 +101,7 @@ SET CONSOLE ON
 
 CLOSE DATABASES
 
-RunShell( 'temp.txt', path4)
+// RunShell( 'temp.txt', path4)
 ZestawD (m->fakt_num)
 
 //USE temp3

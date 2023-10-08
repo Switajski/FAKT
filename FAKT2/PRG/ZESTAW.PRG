@@ -54,6 +54,6 @@ SET DEVICE TO SCREEN
 SET PRINTER OFF
 CLOSE DATABASES
 SET CONSOLE OFF
-RunShell( 'temp.txt', path4)
+// RunShell( 'temp.txt', path4)
 
 RETURN

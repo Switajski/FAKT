@@ -188,7 +188,7 @@ CLOSE DATABASES
 SET CONSOLE ON
 
 DELETE FILE "temp2.dbf"
-RunShell( 'temp.txt', path4)
+// RunShell( 'temp.txt', path4)
 
 RETURN
 

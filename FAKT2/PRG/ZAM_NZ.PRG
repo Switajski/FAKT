@@ -153,7 +153,7 @@ SET DEVICE TO SCREEN
 SET PRINTER OFF
 SET PRINTER TO
 SET CONSOLE ON
-RunShell( 'temp.txt', path4)
+// RunShell( 'temp.txt', path4)
 RETURN
 
 ////////////////////////////////////////////////////////////
@@ -234,7 +234,7 @@ USE
 SET DEVICE TO SCREEN
 SET PRINTER OFF
 SET PRINTER TO
-RunShell( 'temp.txt', path4)
+// RunShell( 'temp.txt', path4)
 RETURN
 
 
@@ -344,7 +344,7 @@ SET PRINTER TO
 SET CONSOLE ON
 USE
 SET KEY -1 TO
-RunShell( 'temp.txt', path4)
+// RunShell( 'temp.txt', path4)
 RETURN
 
 
@@ -401,7 +401,7 @@ USE
 SET DEVICE TO SCREEN
 SET PRINTER OFF
 SET PRINTER TO
-RunShell( 'temp.txt', path4)
+// RunShell( 'temp.txt', path4)
 RETURN
 
 
@@ -495,7 +495,7 @@ SET DEVICE TO SCREEN
 SET PRINTER OFF
 SET PRINTER TO
 SET CONSOLE ON
-RunShell( 'temp.txt', path4)
+// RunShell( 'temp.txt', path4)
 RETURN
 
 

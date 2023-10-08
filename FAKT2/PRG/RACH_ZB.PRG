@@ -207,7 +207,7 @@ ENDDO
 SET CONSOLE ON
 
 DELETE FILE "Temp.dbf"
-RunShell( 'tempz.txt', path4)
+// RunShell( 'tempz.txt', path4)
 
 RETURN
 

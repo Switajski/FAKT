@@ -47,7 +47,7 @@ SET CONSOLE ON
 
 CLOSE DATABASES
 SET MARGIN TO 0
-RunShell( 'temp.txt', path4)
+// RunShell( 'temp.txt', path4)
 
 RETURN
 

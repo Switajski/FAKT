@@ -84,6 +84,6 @@ SET DEVICE TO SCREEN
 SET PRINTER OFF
 CLOSE DATABASES
 SET CONSOLE OFF
-RunShell( 'temp_z.txt', path4)
+// RunShell( 'temp_z.txt', path4)
 
 RETURN

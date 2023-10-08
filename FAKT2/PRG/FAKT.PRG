@@ -13,7 +13,7 @@ SET EXCLUSIVE ON
 SET SCOREBOARD OFF
 SET CENTURY ON
 SET MARGIN TO 5
-SETFUNCTION(9,CHR(27))
+SET FUNCTION(9,CHR(27))
 filter := ''
 rok := 0
 USE Ustaw
@@ -44,7 +44,7 @@ Xg := 2
 Yd := 22
 Xd := 77
 
-//USE standart
+// USE standart
 
 titel := "Wprowadzanie Danych o Pakietach"
 titel1:= 'menue'

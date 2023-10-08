@@ -120,7 +120,7 @@ SET DEVICE TO SCREEN
 
 CLOSE DATABASES
 DELETE FILE "temp4.dbf"
-RunShell( 'temp.txt', path4)
+// RunShell( 'temp.txt', path4)
 
 
 RETURN

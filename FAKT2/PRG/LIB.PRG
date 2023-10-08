@@ -45,31 +45,31 @@ RETURN
 
 FUNCTION SETFUNCTION( nFKey, cString )
 
-      IF GetEnableEvents()
-         DO CASE
-            CASE nFKey <= 10
-               nFKey := nFKey + xbeK_F1 - 1
-            CASE nFKey <= 20
-               nFKey := nFKey + xbeK_CTRL_F1 - 11
-            CASE nFKey <= 30
-               nFKey := nFKey + xbeK_ALT_F1 - 21
-            CASE nFKey <= 40
-               nFKey := nFKey + xbeK_SH_F1 - 31
-         ENDCASE
+      // IF GetEnableEvents()
+      //    DO CASE
+      //       CASE nFKey <= 10
+      //          nFKey := nFKey + xbeK_F1 - 1
+      //       CASE nFKey <= 20
+      //          nFKey := nFKey + xbeK_CTRL_F1 - 11
+      //       CASE nFKey <= 30
+      //          nFKey := nFKey + xbeK_ALT_F1 - 21
+      //       CASE nFKey <= 40
+      //          nFKey := nFKey + xbeK_SH_F1 - 31
+      //    ENDCASE
 
-         IF Len( cString) == 0
-            RETURN SetAppEvent( nFKey, NIL)
-         ENDIF
+      //    IF Len( cString) == 0
+      //       RETURN SetAppEvent( nFKey, NIL)
+      //    ENDIF
 
-         RETURN SetAppEvent( nFKey, {|| _Keyboard( cString ) } )
-      ELSE
-         nFKey := IIf( nFKey == 1, 28, 1 - nFKey )
+      //    RETURN SetAppEvent( nFKey, {|| _Keyboard( cString ) } )
+      // ELSE
+      //    nFKey := IIf( nFKey == 1, 28, 1 - nFKey )
 
-         IF Len( cString) == 0
-           RETURN SetKey( nFKey, NIL)
-         ENDIF
-         RETURN SetKey( nFKey,{|| _Keyboard( cString)})
-      ENDIF
+      //    IF Len( cString) == 0
+      //      RETURN SetKey( nFKey, NIL)
+      //    ENDIF
+      //    RETURN SetKey( nFKey,{|| _Keyboard( cString)})
+      // ENDIF
 
    RETURN NIL
 
@@ -217,7 +217,7 @@ DO WHILE .T.
 * ------------- F9 ? ----------------------------------------------
       CASE taste = -8
            EXIT
-* ------------ Vorw„rts bl„ttern ---------------------------------
+* ------------ Vorwï¿½rts blï¿½ttern ---------------------------------
       CASE taste = -2
            IF .NOT. EOF()
               SKIP 17 -(cursor -6)
@@ -226,7 +226,7 @@ DO WHILE .T.
                  SKIP - 1
               ENDIF
            ENDIF
-* ------------ Zurück blettern -------------------------------------
+* ------------ Zurï¿½ck blettern -------------------------------------
       CASE taste = -3
            IF .NOT. BOF()
               STORE recno() TO rec
@@ -262,9 +262,9 @@ DO WHILE .T.
                 ENDIF
              ENDIF
           ENDIF
-* ------------ F 10 Ende und übernehemen ---------------------------
+* ------------ F 10 Ende und ï¿½bernehemen ---------------------------
       CASE (taste = -9) .OR. (taste = 13)
-* ------------ Sprung zum ausgew„hlten Satz ------------------------
+* ------------ Sprung zum ausgewï¿½hlten Satz ------------------------
           go msr
           skip cursor - 6
           &var1  := &text
@@ -364,7 +364,7 @@ SET COLOR TO &farb1
 RETURN
 
 FUNCTION Czystka(rok)
-#include "Box.ch"
+// #include "Box.ch"
 Rahmen(.F.,.F.,.F.,.F.,.F.,.F.,"USUWANIE NIEPOTRZENBYCH ARTYKULOW.")
 @9,10 SAY "Od ktorego roku zachowac artykuly ?...." GET rok PICTURE '9999'
 READ
@@ -372,7 +372,7 @@ READ
 USE \mag2\DBF\Towary NEW  // SELECT 1
 
 USE Archiv NEW            // SELECT 2
-SET FILTER TO YEAR(Fakt_Dat) >= rok //wybiera artyku³y, które maj¹ byæ zachowane, tj. by³y produkowane od tej daty
+SET FILTER TO YEAR(Fakt_Dat) >= rok //wybiera artykuï¿½y, ktï¿½re majï¿½ byï¿½ zachowane, tj. byï¿½y produkowane od tej daty
 
 USE Artykuly NEW          // SELECT 3
 
@@ -384,19 +384,19 @@ DO WHILE .NOT. EOF()
 
    Artykul := TOW_ARTNR
 
-// Sprawdza czy artyku³ z TOWARY by³ produkowany w okresie >= rok
+// Sprawdza czy artykuï¿½ z TOWARY byï¿½ produkowany w okresie >= rok
    SELECT 2
    LOCATE FOR Artykul == Art_Nr
    IF .NOT. FOUND()
       SELECT 1
-      ? "   Usuwanie Normy materia³owej TOWARY : "+Tow_ArtNr + "    pozycja :" + STR(POS,3,0)+ "   "+Mat_ArtNr
+      ? "   Usuwanie Normy materiaï¿½owej TOWARY : "+Tow_ArtNr + "    pozycja :" + STR(POS,3,0)+ "   "+Mat_ArtNr
       DELETE
    ENDIF
    SELECT 1
   SKIP
 ENDDO
 
-//Usuwanie Artyku³ów w pliku Artykuly*************************************************************************
+//Usuwanie Artykuï¿½ï¿½w w pliku Artykuly*************************************************************************
 
 SELECT 3 // Artykuly
 
@@ -405,7 +405,7 @@ DO WHILE .NOT. EOF()
 
    Artykul := Numer
 
-// Sprawdza czy artyku³ z Artykuly by³ produkowany w okresie >= rok
+// Sprawdza czy artykuï¿½ z Artykuly byï¿½ produkowany w okresie >= rok
    SELECT 2
    LOCATE FOR Artykul == Art_Nr
    IF .NOT. FOUND()
@@ -431,7 +431,7 @@ INKEY()
 RETURN
 
 FUNCTION Czystka2(rok)
-#include "Box.ch"
+// #include "Box.ch"
 Rahmen(.F.,.F.,.F.,.F.,.F.,.F.,"USUWANIE NIEPOTRZENBYCH ARTYKULOW.")
 @9,10 SAY "Od ktorego roku zachowac artykuly ?...." GET rok PICTURE '9999'
 READ
@@ -453,7 +453,7 @@ USE
 USE \mag2\DBF\Towary NEW  // SELECT 1
 
 USE Archiv2 NEW            // SELECT 2
-//SET FILTER TO YEAR(Fakt_Dat) >= rok //wybiera artyku³y, które maj¹ byæ zachowane, tj. by³y produkowane od tej daty
+//SET FILTER TO YEAR(Fakt_Dat) >= rok //wybiera artykuï¿½y, ktï¿½re majï¿½ byï¿½ zachowane, tj. byï¿½y produkowane od tej daty
 INDEX ON Art_Nr TO czystka2
 
 USE Artykuly NEW          // SELECT 3
@@ -466,18 +466,18 @@ DO WHILE .NOT. EOF()
 
    Artykul := TOW_ARTNR
 
-// Sprawdza czy artyku³ z TOWARY by³ produkowany w okresie >= rok
+// Sprawdza czy artykuï¿½ z TOWARY byï¿½ produkowany w okresie >= rok
    SELECT 2
 
    IF .NOT. DBSEEK(Artykul)
       SELECT 1
-      ? "   Usuwanie Normy materia³owej TOWARY : "+Tow_ArtNr + "    pozycja :" + STR(POS,3,0)+ "   "+Mat_ArtNr
+      ? "   Usuwanie Normy materiaï¿½owej TOWARY : "+Tow_ArtNr + "    pozycja :" + STR(POS,3,0)+ "   "+Mat_ArtNr
       DELETE
    ENDIF
    SELECT 1
   SKIP
 ENDDO
-//Usuwanie Artyku³ów w pliku Artykuly*************************************************************************
+//Usuwanie Artykuï¿½ï¿½w w pliku Artykuly*************************************************************************
 
 SELECT 3 // Artykuly
 
@@ -486,7 +486,7 @@ DO WHILE .NOT. EOF()
 
    Artykul := Numer
 
-// Sprawdza czy artyku³ z Artykuly by³ produkowany w okresie >= rok
+// Sprawdza czy artykuï¿½ z Artykuly byï¿½ produkowany w okresie >= rok
    SELECT 2
    IF .NOT. DBSEEK(Artykul)
       SELECT 3
