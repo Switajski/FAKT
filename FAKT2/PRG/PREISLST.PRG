@@ -1,4 +1,4 @@
-PROCEDURE preislst
+// PROCEDURE preislst
 #include "def.ch"
 PRIVATE prnfile
 

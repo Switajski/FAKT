@@ -1,4 +1,4 @@
-PROCEDURE rachunek
+// PROCEDURE rachunek
 rahmen(.T.,.F.,.F.,.F.,.T.,.F.,'wprowadzanie danych o sprzedazy')
 
 USE zamow   NEW

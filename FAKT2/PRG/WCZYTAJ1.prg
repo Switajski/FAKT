@@ -1,4 +1,4 @@
-PROCEDURE Wczytaj1
+// PROCEDURE Wczytaj1
 LOCAL Pozycja, Ilosc, Artykol, Nazwa
 
 CLEAR SCREEN
@@ -31,7 +31,7 @@ LOCAL cText     := MemoRead( cSysFilename )
 LOCAL nMaxLines := MlCount( cText, 120, 4, .F. )
 LOCAL aLines[ nMaxLines ], n
 
-ALERT("Zamówienie ma "+STR(nMaxLines,5,0)+ " pozycji")
+ALERT("Zamï¿½wienie ma "+STR(nMaxLines,5,0)+ " pozycji")
 
 FOR n:=1 TO nMaxLines
    aLines[ n ] := MemoLine( cText, 120, n )

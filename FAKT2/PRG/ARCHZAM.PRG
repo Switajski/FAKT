@@ -1,4 +1,4 @@
-PROCEDURE ArchZam
+// PROCEDURE ArchZam
 
 PRIVATE licznik
 
@@ -6,7 +6,7 @@ licznik := 0
 
 USE zamow2 EXCLUSIVE
 
-//Utworzenie danych rekordów dotycz¹cych zamówienia w zamow2
+//Utworzenie danych rekordï¿½w dotyczï¿½cych zamï¿½wienia w zamow2
 APPEND FROM zamow FOR wykonanie >= ilosc .AND. fakt_num > 0 // .AND. fakt_num <> 99
 
 USE zamow EXCLUSIVE

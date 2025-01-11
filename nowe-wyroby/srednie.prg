@@ -23,6 +23,7 @@ PrintInLine(SrednieCzasy)
 Suma = Sumuj(ObliczSrednieCzasy({}))
 ? Suma
 
+? 'po wykonaniu'
 
 FUNCTION ObliczSrednieCzasy(a)
    SrednieCzasy = {}

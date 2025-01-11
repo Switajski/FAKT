@@ -1,4 +1,4 @@
-PROCEDURE zamow
+// PROCEDURE zamow
 rahmen(.T.,.F.,.F.,.F.,.T.,.F.,'wprowadzanie danych o sprzedazy')
 
 USE zamow NEW

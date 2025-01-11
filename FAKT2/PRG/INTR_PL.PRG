@@ -1,4 +1,4 @@
-PROCEDURE intr_PL
+// PROCEDURE intr_PL
 @ 5,1 CLEAR TO 22,69
 
 m->miesiac := MONTH(DATE())-1

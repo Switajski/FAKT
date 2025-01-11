@@ -1,4 +1,4 @@
-PROCEDURE artykuly
+// PROCEDURE artykuly
 PRIVATE lk
 @ 5,1 CLEAR TO 22,69
 

@@ -1,4 +1,4 @@
-PROCEDURE zestaw
+// PROCEDURE zestaw
 #include  "def.ch"
 rahmen(.T.,.F.,.F.,.F.,.T.,.F.,'wprowadzanie danych o sprzedazy')
 

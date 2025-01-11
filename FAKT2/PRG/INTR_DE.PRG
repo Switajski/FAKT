@@ -1,4 +1,4 @@
-PROCEDURE intr_DE
+// PROCEDURE intr_DE
 
 PRIVATE datei
 

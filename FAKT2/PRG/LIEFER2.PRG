@@ -1,4 +1,4 @@
-PROCEDURE Liefer2
+// PROCEDURE Liefer2
 #include  "def.ch"
 rahmen(.T.,.F.,.F.,.F.,.T.,.F.,'zestawienie niemieckie')
 

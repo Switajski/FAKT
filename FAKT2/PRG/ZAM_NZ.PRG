@@ -1,4 +1,4 @@
-PROCEDURE Zam_NZ
+// PROCEDURE Zam_NZ
 #include  "def.ch"
 PRIVATE opcja
 

@@ -1,4 +1,4 @@
-PROCEDURE zalacz_2
+// PROCEDURE zalacz_2
 #include  "def.ch"
 rahmen(.T.,.F.,.F.,.F.,.T.,.F.,'wprowadzanie danych o sprzedazy')
 

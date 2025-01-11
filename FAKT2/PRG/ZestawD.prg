@@ -1,4 +1,4 @@
-Function zestawD
+// Function zestawD
 #include  "def.ch"
 PARAMETER wysylka
 rahmen(.T.,.F.,.F.,.F.,.T.,.F.,'wprowadzanie danych o sprzedazy')

@@ -31,4 +31,4 @@ WORKDIR "/etc/ld.so.conf.d"
 RUN echo "/usr/local/lib/harbour" >> harbour
 RUN ldconfig
 
-WORKDIR "/"
+WORKDIR "/host/FAKT2"

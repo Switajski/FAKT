@@ -2,8 +2,12 @@
 PROCEDURE Main
 PRIVATE odpow
 PUBLIC Nr_Fakt, Faktor, Pfad, filter, path0, path1, path2, path3, path4, path5, path6, path7, Rachunek
-   
-#include "LIB.prg"
+
+? '1'
+
+// #include "LIB.prg"
+
+? 'po include'
 
 SET DATE TO GERMAN
 SET DELETED ON
@@ -13,7 +17,24 @@ SET EXCLUSIVE ON
 SET SCOREBOARD OFF
 SET CENTURY ON
 SET MARGIN TO 5
-SET FUNCTION(9,CHR(27))
+
+SETFUNCTION(9,CHR(27))
+? 'przed definicja setfunction'
+FUNCTION SETFUNCTION( nFKey, cString )
+
+   nFKey := IIf( nFKey == 1, 28, 1 - nFKey )
+
+   IF Len( cString) == 0
+      RETURN SetKey( nFKey, NIL)
+   ENDIF
+   ? 'po definicji setfunction'
+   RETURN SetKey( nFKey,{|| __Keyboard( cString)})
+   ? 'po zamknieciu funkcji'
+
+RETURN
+
+? 'przed filtrem'
+
 filter := ''
 rok := 0
 USE Ustaw
@@ -51,7 +72,7 @@ titel1:= 'menue'
 
 DO WHILE .T.
    odpow := ' 0'
-   Rahmen(.F.,.F.,.F.,.F.,.T.,.F.,"Wybor rodzaju czynnosci")
+   // Rahmen(.F.,.F.,.F.,.F.,.T.,.F.,"Wybor rodzaju czynnosci")
 
    SET COLOR TO &farb1
    CLOSE DATABASES
@@ -98,50 +119,50 @@ DO WHILE .T.
    odpow := ALLTRIM(odpow)
 
    DO CASE
-      CASE odpow == '1'
-         DO ARTYKULY
-      CASE odpow == '2'
-         DO KLIENCI
-      CASE odpow == '3'
-         DO RACHUNEK
-      CASE odpow == '4'
-         DO ZAMOW
+      // CASE odpow == '1'
+      //    DO ARTYKULY
+      // CASE odpow == '2'
+      //    DO KLIENCI
+      // CASE odpow == '3'
+      //    DO RACHUNEK
+      // CASE odpow == '4'
+      //    DO ZAMOW
 
-      CASE odpow == '5'
-         DO INTR_PL
-      CASE odpow == '6'
-         DO INTR_DE
-      CASE odpow == '7'
-         DO LIEFER2
-      CASE odpow == '8'
-         DO rach_zb
-         DO zestaw
-         IF UPPER(m->Zalacznik) == 'T'
-            DO zalacz_2
-         ENDIF
-      CASE odpow == '9'
-         DO RECH_DE
-      CASE odpow == '10'
-         DO PREISLST
-      CASE odpow == '11'
-         DO ZESTAWD
-      CASE odpow == '12'
-         DO ustaw
-      CASE odpow == '13'
-         DO REO
-      CASE odpow == '14'
-         DO ArchZam
-      CASE odpow == '15'
-         DO archiwum
+      // CASE odpow == '5'
+      //    DO INTR_PL
+      // CASE odpow == '6'
+      //    DO INTR_DE
+      // CASE odpow == '7'
+      //    DO LIEFER2
+      // CASE odpow == '8'
+      //    DO rach_zb
+      //    DO zestaw
+      //    IF UPPER(m->Zalacznik) == 'T'
+      //       DO zalacz_2
+      //    ENDIF
+      // CASE odpow == '9'
+      //    DO RECH_DE
+      // CASE odpow == '10'
+      //    DO PREISLST
+      // CASE odpow == '11'
+      //    DO ZESTAWD
+      // CASE odpow == '12'
+      //    DO ustaw
+      // CASE odpow == '13'
+      //    DO REO
+      // CASE odpow == '14'
+      //    DO ArchZam
+      // CASE odpow == '15'
+      //    DO archiwum
 
-      CASE odpow == '16'
-         DO Zam_NZ
-      CASE odpow == '17'
-         DO Plik
-      CASE odpow == '18'
-         DO Wczytaj1
-      CASE odpow == '19'
-         czystka2(rok)     // procedura w lib.prg
+      // CASE odpow == '16'
+      //    DO Zam_NZ
+      // CASE odpow == '17'
+      //    DO Plik
+      // CASE odpow == '18'
+      //    DO Wczytaj1
+      // CASE odpow == '19'
+      //    czystka2(rok)     // procedura w lib.prg
       CASE odpow == '0'
          SET COLOR TO
          EXIT

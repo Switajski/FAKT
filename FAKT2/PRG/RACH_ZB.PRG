@@ -1,4 +1,4 @@
-PROCEDURE Rach_Zb
+// PROCEDURE Rach_Zb
 #include "def.ch"
 PUBLIC Razem, Zalacznik
 PUBLIC fakt_num, Rach_Nr, Fakt_Dat, Dostawa, Kli_Numer

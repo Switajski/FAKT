@@ -1,4 +1,4 @@
-PROCEDURE Rech_de
+// PROCEDURE Rech_de
 PRIVATE klient
 #include  "def.ch"
 rahmen(.T.,.F.,.F.,.F.,.T.,.F.,'Rachunek Niemiecki')

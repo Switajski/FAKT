@@ -1,75 +1,21 @@
 ******************* pokazuje okreslenie artykulu na monitorze ******************************************
 
+? 'laduje include'
 
-FUNCTION Anzeige()
-PARAMETER y,c
-
-SELECT artykuly
-art := READVAR()
-
-IF DBSEEK(&art)
-   @ y,9  SAY LEFT(ALLTRIM(nazwa1)+' '+ALLTRIM(nazwa2)+' '+ALLTRIM(nazwa3),45)
-   SELECT faktury
-   ausgang := .T.
-
-ELSE
-   IF .NOT. EMPTY(&art)
-      ALERT('Artykul nie zostal odnaleziony w danych')
-   ELSE
-      ALERT('prosze cofnac')
-   ENDIF
-   SELECT faktury
-   ausgang := .F.
-ENDIF
-
-RETURN ausgang
-
-
+DO faktrahm
 ************************* kresli ramy dla funkcji rahmen *********************************
 PROCEDURE faktrahm
-*#include 'def.ch'
-SINGLE = CHR(218) + CHR(196) + CHR(191) + CHR(179) +;
-         CHR(217) + CHR(196) + CHR(192) + CHR(179)
-@ Yg-1,Xg-1,Yd+1,Xd+1 BOX SINGLE
-@ Yg,Xg clear to Yd,Xd
-SET COLOR TO &farb2
-@ 24,0  SAY '          '
-@ 24,14 SAY 'F3 naprzod  '
-@ 24,28 SAY 'F4 spowrotem'
-SET COLOR TO farb1
+   ? 'faktrahm'
 RETURN
-
-
-**************************************************************************
-
 
 FUNCTION SETFUNCTION( nFKey, cString )
 
-      // IF GetEnableEvents()
-      //    DO CASE
-      //       CASE nFKey <= 10
-      //          nFKey := nFKey + xbeK_F1 - 1
-      //       CASE nFKey <= 20
-      //          nFKey := nFKey + xbeK_CTRL_F1 - 11
-      //       CASE nFKey <= 30
-      //          nFKey := nFKey + xbeK_ALT_F1 - 21
-      //       CASE nFKey <= 40
-      //          nFKey := nFKey + xbeK_SH_F1 - 31
-      //    ENDCASE
+      // nFKey := IIf( nFKey == 1, 28, 1 - nFKey )
 
-      //    IF Len( cString) == 0
-      //       RETURN SetAppEvent( nFKey, NIL)
-      //    ENDIF
-
-      //    RETURN SetAppEvent( nFKey, {|| _Keyboard( cString ) } )
-      // ELSE
-      //    nFKey := IIf( nFKey == 1, 28, 1 - nFKey )
-
-      //    IF Len( cString) == 0
-      //      RETURN SetKey( nFKey, NIL)
-      //    ENDIF
-      //    RETURN SetKey( nFKey,{|| _Keyboard( cString)})
+      // IF Len( cString) == 0
+      //    RETURN SetKey( nFKey, NIL)
       // ENDIF
+      // RETURN SetKey( nFKey,{|| __Keyboard( cString)})
 
    RETURN NIL
 
@@ -78,6 +24,7 @@ FUNCTION SETFUNCTION( nFKey, cString )
 PROCEDURE FAKTS2
 *#include "def.ch"
 PUBLIC msr,cena
+
 SET CURSOR OFF
 SET DEFAULT TO &path2
 STORE UPPER(READVAR()) TO var1
@@ -303,9 +250,11 @@ RETURN
 
 
 ******************************** reorganizacja danych **************************************************
+? 'definuje rahmen'
 
 PROCEDURE RAHMEN
 PARAMETER f2,F3,F4,F8,F9,F10,titel
+? 'wykonuje rahmen'
 #include "def.ch"
 
 PRIVATE RText
@@ -515,4 +464,5 @@ Rahmen(.F.,.F.,.F.,.F.,.F.,.F.,"USUWANIE NIEPOTRZENBYCH ARTYKULOW.")
 @ 7,9 SAY "Operacje usuwania artykulow pomyslnie zakonczono"
 @ 9,9 SAY "wykonaj reorganizacje w programie magazyn"
 INKEY(100)
+? '10'
 RETURN
