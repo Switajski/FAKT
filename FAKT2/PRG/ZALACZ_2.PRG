@@ -1,4 +1,4 @@
-// PROCEDURE zalacz_2
+PROCEDURE zalacz_2
 #include  "def.ch"
 rahmen(.T.,.F.,.F.,.F.,.T.,.F.,'wprowadzanie danych o sprzedazy')
 
@@ -84,6 +84,6 @@ SET DEVICE TO SCREEN
 SET PRINTER OFF
 CLOSE DATABASES
 SET CONSOLE OFF
-// RunShell( 'temp_z.txt', path4)
+RunShell( 'temp_z.txt', path4)
 
 RETURN

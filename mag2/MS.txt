@@ -1,0 +1,26 @@
+
+Stany Magazynowe na dzien: 20.06.24  dla grupy: MS  
+
+L.P.     Nr.  Nazwa Materialu                                               Przychod   Rozchod     Stan j.m.    Cena    Wartosc
+___________________________________________________________________________________________________________________________________
+    1. FR744  Frotta rosewood ROSE AF06938                                      0.00      0.00      0.00 mb     20.25         0.00
+    2. FRNC   Frota coral AF 6931 szer.152cm  g.340                           181.81    146.00     35.81 mb     21.24       760.60
+    3. RYMU   Tkanina  ryps velours musztardowy AF07696 150cm g.275           629.64    401.00    228.64 mb     23.62      5400.48
+    4. TARD   Tk.akryl rose dots 4241/008 TEFL.                               314.00    260.00     54.00 mb     24.07      1299.78
+    5. TB683  Tk.bawel.bjornen LGA944003 naturel                                0.00      0.00      0.00 mb     17.10         0.00
+    6. TB685  Tk.bawel.animali  AF07611                                         0.00      0.00      0.00 mb     14.36         0.00
+    7. TB686  Tk.bawel.swan   AF07668                                           0.00      0.00      0.00 mb     14.36         0.00
+    8. TBAB   Tk.bawel.apfel petrol 594  Des.66103                           1228.60   1028.00    200.60 mb     14.85      2978.91
+    9. TBAP   Tk.bawel. polka dots anthrazit 4291/006                        3175.59   2439.00    736.59 mb     17.32     12757.74
+   10. TBDS   Tk.bawel.stars denim, P 259561 4352/007-FD nr 402              5246.00   4963.00    283.00 mb     13.28      3758.24
+   11. TBEN   Tk.bawel. schwalben 4662/002                                    963.00    689.00    274.00 mb     13.28      3638.72
+   12. TBFN   Tk.bawel.fuchse grau nr 46643/   nr 506                        4086.00   3804.00    282.00 mb     15.53      4379.46
+   13. TBGP   Tk.bawel. polka grau 289961 4291/005 160cm                     4695.89   4416.00    279.89 mb     17.32      4847.69
+   14. TBHB   Tk.bawel.herzen grau  596 Des.54176                            1871.60   1588.00    283.60 mb     14.85      4211.46
+   15. TBLA   Tk.bawel. listki aqua 287171/4514/002 160cm                     768.00    665.00    103.00 mb     13.28      1367.84
+   16. TBLU   Tk.bawel.LUFTBALLONS AF06079                                   1227.00    925.00    302.00 mb     16.20      4892.40
+   17. TBRK   Tk.bawelniana rotkapchen des.54114 farbe 901 nr 443            3379.10   3010.00    369.10 mb     15.53      5732.12
+   18. TBZE   Tk.bawel.ZEPPELIN AF06080                                      1305.00   1128.00    177.00 mb     16.20      2867.40
+   19. TPCZ   Tk.bawel.Luisa-czer/biale kropki AF4846 pois neg red           2494.20   2365.00    129.20 mb     12.02      1552.98
+                                                                                                         ___________________________
+              Razem Wartosc materialow w PLN =                                                                            60445.82

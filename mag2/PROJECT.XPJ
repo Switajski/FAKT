@@ -1,0 +1,69 @@
+[PROJECT]
+    DEBUG         = yes
+    VERSION       = 2.0
+    OPENFILES     = zdejmij.prg;usuniecie.prg;ustaw.prg;TOWARY.PRG;Ruch.prg;reo.prg;miesiac.prg;material.prg;mag.prg;lib.prg;KopiaWyr.prg;grupy.prg;eingabe.prg;DrukStan.prg;DrukNorm.prg;drukkart.prg;dostawcy.prg
+    PROJECT.XPJ
+
+[PROJECT.XPJ]
+    MAG.exe
+
+[MAG.exe]
+    COMPILE       = xpp
+    COMPILE_FLAGS = /wi /wl /wu /q /w
+    DEBUG_SAVE    = yes
+    GUI           = no
+    LINKER        = alink
+    LINK_FLAGS    = 
+    RC_COMPILE    = arc
+    RC_FLAGS      = /v
+    HOSTPROCESS   = E\\$2\mag2\MAG.exe
+// $START-AUTODEPEND
+    STD.CH
+    SET.CH
+    NATMSG.CH
+    GET.CH
+    PROMPT.CH
+    MEMVAR.CH
+    COLLAT.CH
+    INKEY.CH
+    APPEVENT.CH
+    DEF.CH
+    GETEXIT.CH
+    SETCURS.CH
+    COMMON.CH
+    DOSTAWCY.obj
+    DRUKKART.obj
+    DRUKNORM.obj
+    DRUKSTAN.obj
+    EINGABE.obj
+    grupy.obj
+    KopiaWyr.obj
+    LIB.obj
+    MAG.obj
+    MATERIAL.obj
+    miesiac.obj
+    REO.obj
+    Ruch.obj
+    TOWARY.obj
+    USTAW.obj
+    usuniecie.obj
+    ZDEJMIJ.obj
+// $STOP-AUTODEPEND
+    DOSTAWCY.PRG
+    DRUKKART.PRG
+    DRUKNORM.PRG
+    DRUKSTAN.PRG
+    EINGABE.PRG
+    grupy.prg
+    KopiaWyr.prg
+    LIB.PRG
+    MAG.PRG
+    MATERIAL.PRG
+    miesiac.prg
+    REO.PRG
+    Ruch.prg
+    TOWARY.PRG
+    USTAW.PRG
+    usuniecie.prg
+    ZDEJMIJ.PRG
+

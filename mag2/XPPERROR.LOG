@@ -1,0 +1,27 @@
+
+------------------------------------------------------------------------------
+ERROR LOG of "D:\mag2\MAG.exe" Date: 29.01.23 18:42:44
+
+Xbase++ version     : Xbase++ (R) Version 1.90.320
+Operating system    : Windows  06.02 Build 09200
+------------------------------------------------------------------------------
+oError:args         :
+oError:canDefault   : Y
+oError:canRetry     : N
+oError:canSubstitute: N
+oError:cargo        : NIL
+oError:description  : Unknown/Invalid symbol for alias
+oError:filename     : 
+oError:genCode      :         66
+oError:operation    : DbPack
+oError:osCode       :          0
+oError:severity     :          2
+oError:subCode      :       8021
+oError:subSystem    : BASE
+oError:thread       :          1
+oError:tries        :          0
+------------------------------------------------------------------------------
+CALLSTACK:
+------------------------------------------------------------------------------
+Called from REO(46)
+Called from MAIN(126)

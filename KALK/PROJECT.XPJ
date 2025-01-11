@@ -1,0 +1,40 @@
+[PROJECT]
+    DEBUG         = yes
+    VERSION       = 2.0
+    OPENFILES     = zestawienie.prg;ustawienia.prg;LIB.PRG;kalk.prg;jednostka.prg;funkcje.prg
+    PROJECT.XPJ
+
+[PROJECT.XPJ]
+    KALK.EXE
+
+[KALK.EXE]
+    COMPILE       = xpp
+    COMPILE_FLAGS = /q
+    DEBUG_SAVE    = yes
+    GUI           = no
+    LINKER        = alink
+    LINK_FLAGS    = 
+    RC_COMPILE    = arc
+    RC_FLAGS      = /v
+// $START-AUTODEPEND
+    STD.CH
+    SET.CH
+    NATMSG.CH
+    GET.CH
+    PROMPT.CH
+    MEMVAR.CH
+    COLLAT.CH
+    funkcje.obj
+    jednostka.obj
+    KALK.obj
+    LIB.obj
+    ustawienia.obj
+    zestawienie.obj
+// $STOP-AUTODEPEND
+    funkcje.prg
+    jednostka.prg
+    KALK.PRG
+    LIB.PRG
+    ustawienia.prg
+    zestawienie.prg
+

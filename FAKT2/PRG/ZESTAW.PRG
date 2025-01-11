@@ -1,4 +1,4 @@
-// PROCEDURE zestaw
+PROCEDURE zestaw
 #include  "def.ch"
 rahmen(.T.,.F.,.F.,.F.,.T.,.F.,'wprowadzanie danych o sprzedazy')
 
@@ -54,6 +54,6 @@ SET DEVICE TO SCREEN
 SET PRINTER OFF
 CLOSE DATABASES
 SET CONSOLE OFF
-// RunShell( 'temp.txt', path4)
+RunShell( 'temp.txt', path4)
 
 RETURN

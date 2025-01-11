@@ -1,0 +1,14 @@
+FATAL ERROR LOG 
+Not recoverable Error!
+SYS Thread-ID: 772 
+Module: EH
+Error Codes: EH: 900 Sub: 0(0) OS: 0 XPP: 0
+Call Stack of Thread 1 (660):
+DBIMPORT(646)
+_DBIMPORT(412)
+CZAS2(41)
+MAIN(117)
+Call Stack of Thread 2 (864):
+File: D:\PLACE\SYS.EXE
+TimeStamp: 20160607 07:25
+End of FATAL ERROR LOG.

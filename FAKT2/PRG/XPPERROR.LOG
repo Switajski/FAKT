@@ -1,32 +1,29 @@
-     
-     ------------------------------------------------------------------------------     
-     ERROR LOG of "C:\FAKT2\PRG\FAKT.EXE" Date: 23.05.2021 20:13:29     
-          
-     Xbase++ version     : Xbase++ (R) Version 1.90.320     
-     Operating system    : Windows XP 05.01 Build 02600 Dodatek Service Pack 3     
-     ------------------------------------------------------------------------------     
-     oError:args         :     
-               -> VALTYPE: C VALUE: \\mag2\Pozycja.NTX     
-               -> VALTYPE: C VALUE: pos     
-               -> VALTYPE: B VALUE: {|| pos}     
-               -> VALTYPE: U VALUE: NIL     
-     oError:canDefault   : Y     
-     oError:canRetry     : Y     
-     oError:canSubstitute: N     
-     oError:cargo        : NIL     
-     oError:description  : File can not be created     
-     oError:filename     :      
-     oError:genCode      :         70     
-     oError:operation    : DbCreateIndex     
-     oError:osCode       :          0     
-     oError:severity     :          2     
-     oError:subCode      :       8999     
-     oError:subSystem    : BASE     
-     oError:thread       :          1     
-     oError:tries        :          1     
-     ------------------------------------------------------------------------------     
-     CALLSTACK:     
-     ------------------------------------------------------------------------------     
-     Called from CZYSTKA2(504)     
-     Called from MAIN(141)     
-     
+
+------------------------------------------------------------------------------
+ERROR LOG of "D:\FAKT2\PRG\FAKT.EXE" Date: 23.10.2023 17:31:56
+
+Xbase++ version     : Xbase++ (R) Version 1.90.320
+Operating system    : Windows  06.02 Build 09200
+------------------------------------------------------------------------------
+oError:args         :
+          -> VALTYPE: C VALUE: temp.txt
+          -> VALTYPE: C VALUE: C:\Program Files (x86)\Microsoft Office\OFFICE12\winword.exe
+oError:canDefault   : N
+oError:canRetry     : N
+oError:canSubstitute: N
+oError:cargo        : NIL
+oError:description  : Operating system error
+oError:filename     : 
+oError:genCode      :         40
+oError:operation    : runShell
+oError:osCode       :          2
+oError:severity     :          2
+oError:subCode      :          4
+oError:subSystem    : BASE
+oError:thread       :          1
+oError:tries        :          0
+------------------------------------------------------------------------------
+CALLSTACK:
+------------------------------------------------------------------------------
+Called from LIEFER2(104)
+Called from MAIN(112)

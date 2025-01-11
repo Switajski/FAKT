@@ -1,4 +1,4 @@
-// PROCEDURE preislst
+PROCEDURE preislst
 #include "def.ch"
 PRIVATE prnfile
 
@@ -47,7 +47,7 @@ SET CONSOLE ON
 
 CLOSE DATABASES
 SET MARGIN TO 0
-// RunShell( 'temp.txt', path4)
+RunShell( 'temp.txt', path4)
 
 RETURN
 

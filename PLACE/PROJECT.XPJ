@@ -1,0 +1,100 @@
+[PROJECT]
+    DEBUG         = no
+    VERSION       = 2.0
+    OPENFILES     = zmieniaj.prg;ZMIANA.PRG;ZLECENIA.PRG;WYROBY.PRG;ustaw.prg;URLOPY.PRG;SYS.PRG;REO.PRG;REJESTR.PRG;PRACOWNI.PRG;MO_ZLECE.PRG;LISTY.PRG;LIB.PRG;KOSZTY.PRG;DR_WYROB.PRG;DR_STATI.PRG;DR_SREDN.PRG;DR_PLACE.PRG;DR_LIPRA.PRG;DR_KBKN.PRG;DR_CENY.PRG;CZAS2.PRG;ARCHIV.PRG;analiza.prg;AkStawek.prg
+    PROJECT.XPJ
+
+[PROJECT.XPJ]
+    SYS.EXE
+
+[SYS.EXE]
+    COMPILE       = xpp
+    COMPILE_FLAGS = /q
+    DEBUG_SAVE    = no
+    GUI           = no
+    LINKER        = alink
+    LINK_FLAGS    = 
+    RC_COMPILE    = arc
+    RC_FLAGS      = /v
+    BREAKPOINT    = LIB.PRG:116=1@.T.@1@-1@1@.T.@0@@,110=1@.T.@1@-1@1@.T.@0@@
+// $START-AUTODEPEND
+    STD.CH
+    SET.CH
+    NATMSG.CH
+    GET.CH
+    PROMPT.CH
+    MEMVAR.CH
+    COLLAT.CH
+    DEF.CH
+    GETEXIT.CH
+    APPEVENT.CH
+    SETCURS.CH
+    COMMON.CH
+    AkStawek.obj
+    analiza.obj
+    ARCHIV.obj
+    CZAS2.obj
+    CZAS3.obj
+    DR_CENY.obj
+    DR_CZASY.obj
+    DR_ICZAS.obj
+    DR_ICZDR.obj
+    DR_KBKN.obj
+    DR_LIPRA.obj
+    DR_PLACE.obj
+    DR_SREDN.obj
+    DR_STATI.obj
+    DR_WYROB.obj
+    DR_ZCZAS.obj
+    DR_ZCZDR.obj
+    DR_ZLECE.obj
+    KOSZTY.obj
+    LIB.obj
+    LISTY.obj
+    MO_ZLECE.obj
+    PO_ZLECE.obj
+    PRACOWNI.obj
+    REJESTR.obj
+    REO.obj
+    SYS.obj
+    URLOPY.obj
+    USTAW.obj
+    WYROBY.obj
+    ZLECENIA.obj
+    ZMIANA.obj
+    zmieniaj.obj
+// $STOP-AUTODEPEND
+    AkStawek.prg
+    analiza.prg
+    ARCHIV.PRG
+    CZAS2.PRG
+    CZAS3.PRG
+    DR_CENY.PRG
+    DR_CZASY.PRG
+    DR_ICZAS.PRG
+    DR_ICZDR.PRG
+    DR_KBKN.PRG
+    DR_LIPRA.PRG
+    DR_PLACE.PRG
+    DR_SREDN.PRG
+    DR_STATI.PRG
+    DR_WYROB.PRG
+    DR_ZCZAS.PRG
+    DR_ZCZDR.PRG
+    DR_ZLECE.PRG
+    KOSZTY.PRG
+    LIB.PRG
+    LISTY.PRG
+    MO_ZLECE.PRG
+    PO_ZLECE.PRG
+    PRACOWNI.PRG
+    REJESTR.PRG
+    REO.PRG
+    SYS.PRG
+    URLOPY.PRG
+    USTAW.PRG
+    WYROBY.PRG
+    ZLECENIA.PRG
+    ZMIANA.PRG
+    zmieniaj.prg
+

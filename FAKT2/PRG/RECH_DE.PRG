@@ -1,4 +1,4 @@
-// PROCEDURE Rech_de
+PROCEDURE Rech_de
 PRIVATE klient
 #include  "def.ch"
 rahmen(.T.,.F.,.F.,.F.,.T.,.F.,'Rachunek Niemiecki')
@@ -188,7 +188,7 @@ CLOSE DATABASES
 SET CONSOLE ON
 
 DELETE FILE "temp2.dbf"
-// RunShell( 'temp.txt', path4)
+RunShell( 'temp.txt', path4)
 
 RETURN
 

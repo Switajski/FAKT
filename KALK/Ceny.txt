@@ -1,0 +1,44 @@
+Kalkulacja dla wyrobu: Miladka -kocyk do raczkowania-BW Luiza+frotta j.siwa 90 x 100cm 
+numer wyrobu: P.0406 * Robocizna:P.0404 * Data: 22.06.2011 * Kurs PLN/EUR:  3.9000
+
+                                                      czas    - s t a w k a -
+numer nazwa operacji                                  (min)    godz. operacja
+_______________________________________________________________________________
+  1.  Wykroic                                         6.25       5.82   0.61 zl
+  2.  Zaznaczyc stebnowki                             1.75       5.71   0.17 zl
+  3.  Zeszyc i stebnowac                             41.50       5.33   3.69 zl
+  4.  Zalamowac                                      16.50       5.33   1.47 zl
+  5.  Zamocowac lamowke                               7.50       5.33   0.67 zl
+  6.  Sprawdzic i zapakowac                          11.50       5.71   1.09 zl
+  7.  Przygotowac lamowke                             4.50       5.33   0.40 zl
+  8.  Przygotowac wiazania 85x2                       2.00       5.33   0.18 zl
+_______________________________________________________________________________
+                                                     91.50 min          8.28 zl
+   A. Robocizna z premia 33 % .......................................  11.01 zl
+
+wykaz materialow na wyrob
+
+L.P. numer nazwa materialu                           ilosc       cena   wartosc
+_______________________________________________________________________________
+  1.  TPCZ Tk.bawel.Luisa-czer/biale kropki 1816-91   0.92 mb   10.92  10.05 zl
+  2.  FRjs Frotta j.siwa szer.155cm AF3142            0.92 mb   19.06  17.54 zl
+  3.  OV03 Ovata 300g/34,55 m2 / 10,37 kg             1.48 m2    2.40   3.55 zl
+  4.  NI02 Nici TALIA 5000 m                          0.02 szt   7.94   0.16 zl
+  5.  WR06 Worek foliowy rozm.50x80                   0.20 szt   0.35   0.07 zl
+  6.  LC36 Lamowka kolor czarny nr 001 szer.36mm      5.60 mb    0.29   1.62 zl
+  7.  AP7  Aplikacja priebe 7                         1.00 szt   0.00   0.00 zl
+_______________________________________________________________________________
+      Koszty Materialowe.............................................  32.99 zl
+   B. Koszty materialowe z narzutem  3.00 % .........................  33.98 zl
+
+   C. Narzut Kosztow Stalych        43.60 % .........................   4.80 zl
+   D. Narzut Kosztow Zmiennych      44.00 % .........................   4.84 zl
+_______________________________________________________________________________
+   E1.Jednostkowy Koszt Produkcji Wyrobu A+B+C+D.....................  54.63 zl
+   E2.Jednostkowy Koszt Produkcji Wyrobu A+B+C+D w EURO..............  14.01 €
+   F. Narzut Kosztow Sprzedazy W EURO................................   2.82 €
+   G. Cena Kalkulowana w EURO........................................  16.83 €
+_______________________________________________________________________________
+      Aktualna Cena Klienta w EURO...................................  13.79 €
+      Aktualne Pokrycie Sprzedazy w EURO (Suma)......................  -0.22 €
+      Aktualne Pokrycie Sprzedazy w %................................  -7.80 %

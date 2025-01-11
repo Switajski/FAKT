@@ -1,4 +1,4 @@
-// PROCEDURE Liefer2
+PROCEDURE Liefer2
 #include  "def.ch"
 rahmen(.T.,.F.,.F.,.F.,.T.,.F.,'zestawienie niemieckie')
 
@@ -101,7 +101,7 @@ SET CONSOLE ON
 
 CLOSE DATABASES
 
-// RunShell( 'temp.txt', path4)
+RunShell( 'temp.txt', path4)
 ZestawD (m->fakt_num)
 
 //USE temp3

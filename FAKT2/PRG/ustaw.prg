@@ -1,4 +1,4 @@
-// PROCEDURE ustaw
+PROCEDURE ustaw
 USE &path0
 m->Ustawienia := Ustawienia
 m->Artykuly   := Artykuly

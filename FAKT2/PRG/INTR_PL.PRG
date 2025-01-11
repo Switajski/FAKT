@@ -1,4 +1,4 @@
-// PROCEDURE intr_PL
+PROCEDURE intr_PL
 @ 5,1 CLEAR TO 22,69
 
 m->miesiac := MONTH(DATE())-1
@@ -120,7 +120,7 @@ SET DEVICE TO SCREEN
 
 CLOSE DATABASES
 DELETE FILE "temp4.dbf"
-// RunShell( 'temp.txt', path4)
+RunShell( 'temp.txt', path4)
 
 
 RETURN

@@ -1,9 +1,9 @@
      
-     Zalacznik nr 2 do wysylki nr 8114     
-     Data Wysylki: 10.02.2018     
+     Zalacznik nr 2 do wysylki nr 221     
+     Data Wysylki: 10.03.2021     
           
-     Numer rachunku: 8114     
-     z dnia : 10.02.2018     
+     Numer rachunku: 221     
+     z dnia : 10.03.2021     
           
           
      1. Dostawca Towaru :     
@@ -11,14 +11,14 @@
         NIP PL 8751003090     
           
      2. Odbiorca :     
-        Priebes OHG                                            
-                                                               
-        Maxstrasse 1                       
-        71636   Ludwigsburg                        
-        Id. Nr. DE275948390              
+        Firma                                                  
+        Georg Switajski                                        
+        Gasfabrikgasschen 10               
+        95326   Kulmbach                           
+        Id. Nr. DE159676260              
           
-     3. Towar zgodnie ze specyfikacja do faktury nr 8114     
-        z dnia 10.02.2018 odebralem dnia 10.02.2018     
+     3. Towar zgodnie ze specyfikacja do faktury nr 221     
+        z dnia 10.03.2021 odebralem dnia 10.03.2021     
           
           
           

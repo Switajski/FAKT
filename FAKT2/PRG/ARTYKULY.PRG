@@ -1,4 +1,4 @@
-// PROCEDURE artykuly
+PROCEDURE artykuly
 PRIVATE lk
 @ 5,1 CLEAR TO 22,69
 
@@ -19,7 +19,6 @@ m->Numer_Wy   := SPACE(8)
 m->Kli_Numer  := 0
 m->wykroj     := 0
 NowyWyrob     := .T.
-m->Nr_Celny   := SPACE(8)
 
 
 SET KEY -1 TO fakts2
@@ -43,7 +42,7 @@ DO WHILE .NOT. abbruch
 
    SET KEY -7 TO WyrUsun
 
-   rahmen(.F.,.F.,.F.,.F.,.T.,.T.,'wprowadzanie danych o wyrobach')
+   rahmen(.F.,.F.,.F.,.T.,.T.,.T.,'wprowadzanie danych o wyrobach')
 
 
 
@@ -54,7 +53,6 @@ DO WHILE .NOT. abbruch
 
    IF DBSEEK(m->numer) //FOUND()
 
-      rahmen(.F.,.F.,.F.,.T.,.T.,.T.,'wprowadzanie danych o wyrobach')
 
       @ 3,57 SAY 'art: '+ ALLTRIM(m->Numer)+' zmiana' COLOR farb5
       SET KEY -7 TO WyrUsun
@@ -79,7 +77,6 @@ DO WHILE .NOT. abbruch
 
 
 
-
    ELSE
       @ 3,57 SAY 'nowy wyrob' COLOR farb5
       NowyWyrob := .T.
@@ -96,9 +93,9 @@ DO WHILE .NOT. abbruch
       @  5,2   SAY 'Nazwa wyrobu    ' GET m->nazwa1
       @  6,2   SAY '(Polska)        ' GET m->nazwa2
       @  7,2   SAY '                ' GET m->nazwa3
-      @ 11,2   SAY 'Jednostka miary ' GET m->jednostka
       @ 11,35  SAY 'Cena wg Zamowien' GET m->cena_klien PICTURE '99999.99 EUR'
-      @ 13,2   SAY 'Wykrojow/warstwe' GET m->wykroj   PICTURE '99'
+      @ 11,2   SAY 'Jednostka miary ' GET m->jednostka
+      @ 13,2   SAY 'Wykrojow/warstwe' GET m->wykroj   PICTURE '99 sztuk'
       @ 13,35  SAY 'Kod celny towaru' GET m->Nr_Celny PICTURE '99999999'
       @  15,2  SAY 'Bezeichnung     ' GET m->bezeichn1
       @  16,2  SAY '(Deutsch)       ' GET m->bezeichn2
@@ -142,7 +139,7 @@ DO WHILE .NOT. abbruch
       REPLACE Einheit    WITH m->Einheit
       REPLACE Numer_Wy   WITH m->Numer_Wy
       REPLACE Kli_Numer  WITH m->Kli_Numer
-      REPLACE Wykroj     WITH m->wykroj
+      REPLACE Wykroj     WITH m->Wykroj
    ENDIF
    CLOSE DATABASES
    SET KEY -7 TO

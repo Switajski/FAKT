@@ -1,21 +1,75 @@
 ******************* pokazuje okreslenie artykulu na monitorze ******************************************
 
-? 'laduje include'
 
-DO faktrahm
+FUNCTION Anzeige()
+PARAMETER y,c
+
+SELECT artykuly
+art := READVAR()
+
+IF DBSEEK(&art)
+   @ y,9  SAY LEFT(ALLTRIM(nazwa1)+' '+ALLTRIM(nazwa2)+' '+ALLTRIM(nazwa3),45)
+   SELECT faktury
+   ausgang := .T.
+
+ELSE
+   IF .NOT. EMPTY(&art)
+      ALERT('Artykul nie zostal odnaleziony w danych')
+   ELSE
+      ALERT('prosze cofnac')
+   ENDIF
+   SELECT faktury
+   ausgang := .F.
+ENDIF
+
+RETURN ausgang
+
+
 ************************* kresli ramy dla funkcji rahmen *********************************
 PROCEDURE faktrahm
-   ? 'faktrahm'
+*#include 'def.ch'
+SINGLE = CHR(218) + CHR(196) + CHR(191) + CHR(179) +;
+         CHR(217) + CHR(196) + CHR(192) + CHR(179)
+@ Yg-1,Xg-1,Yd+1,Xd+1 BOX SINGLE
+@ Yg,Xg clear to Yd,Xd
+SET COLOR TO &farb2
+@ 24,0  SAY '          '
+@ 24,14 SAY 'F3 naprzod  '
+@ 24,28 SAY 'F4 spowrotem'
+SET COLOR TO farb1
 RETURN
+
+
+**************************************************************************
+
 
 FUNCTION SETFUNCTION( nFKey, cString )
 
-      // nFKey := IIf( nFKey == 1, 28, 1 - nFKey )
+      IF GetEnableEvents()
+         DO CASE
+            CASE nFKey <= 10
+               nFKey := nFKey + xbeK_F1 - 1
+            CASE nFKey <= 20
+               nFKey := nFKey + xbeK_CTRL_F1 - 11
+            CASE nFKey <= 30
+               nFKey := nFKey + xbeK_ALT_F1 - 21
+            CASE nFKey <= 40
+               nFKey := nFKey + xbeK_SH_F1 - 31
+         ENDCASE
 
-      // IF Len( cString) == 0
-      //    RETURN SetKey( nFKey, NIL)
-      // ENDIF
-      // RETURN SetKey( nFKey,{|| __Keyboard( cString)})
+         IF Len( cString) == 0
+            RETURN SetAppEvent( nFKey, NIL)
+         ENDIF
+
+         RETURN SetAppEvent( nFKey, {|| _Keyboard( cString ) } )
+      ELSE
+         nFKey := IIf( nFKey == 1, 28, 1 - nFKey )
+
+         IF Len( cString) == 0
+           RETURN SetKey( nFKey, NIL)
+         ENDIF
+         RETURN SetKey( nFKey,{|| _Keyboard( cString)})
+      ENDIF
 
    RETURN NIL
 
@@ -24,7 +78,6 @@ FUNCTION SETFUNCTION( nFKey, cString )
 PROCEDURE FAKTS2
 *#include "def.ch"
 PUBLIC msr,cena
-
 SET CURSOR OFF
 SET DEFAULT TO &path2
 STORE UPPER(READVAR()) TO var1
@@ -164,7 +217,7 @@ DO WHILE .T.
 * ------------- F9 ? ----------------------------------------------
       CASE taste = -8
            EXIT
-* ------------ Vorwï¿½rts blï¿½ttern ---------------------------------
+* ------------ Vorw„rts bl„ttern ---------------------------------
       CASE taste = -2
            IF .NOT. EOF()
               SKIP 17 -(cursor -6)
@@ -173,7 +226,7 @@ DO WHILE .T.
                  SKIP - 1
               ENDIF
            ENDIF
-* ------------ Zurï¿½ck blettern -------------------------------------
+* ------------ Zurück blettern -------------------------------------
       CASE taste = -3
            IF .NOT. BOF()
               STORE recno() TO rec
@@ -209,9 +262,9 @@ DO WHILE .T.
                 ENDIF
              ENDIF
           ENDIF
-* ------------ F 10 Ende und ï¿½bernehemen ---------------------------
+* ------------ F 10 Ende und übernehemen ---------------------------
       CASE (taste = -9) .OR. (taste = 13)
-* ------------ Sprung zum ausgewï¿½hlten Satz ------------------------
+* ------------ Sprung zum ausgew„hlten Satz ------------------------
           go msr
           skip cursor - 6
           &var1  := &text
@@ -250,11 +303,9 @@ RETURN
 
 
 ******************************** reorganizacja danych **************************************************
-? 'definuje rahmen'
 
 PROCEDURE RAHMEN
 PARAMETER f2,F3,F4,F8,F9,F10,titel
-? 'wykonuje rahmen'
 #include "def.ch"
 
 PRIVATE RText
@@ -310,159 +361,4 @@ ELSE
    @ 24,70 SAY "          "
 ENDIF
 SET COLOR TO &farb1
-RETURN
-
-FUNCTION Czystka(rok)
-// #include "Box.ch"
-Rahmen(.F.,.F.,.F.,.F.,.F.,.F.,"USUWANIE NIEPOTRZENBYCH ARTYKULOW.")
-@9,10 SAY "Od ktorego roku zachowac artykuly ?...." GET rok PICTURE '9999'
-READ
-
-USE \mag2\DBF\Towary NEW  // SELECT 1
-
-USE Archiv NEW            // SELECT 2
-SET FILTER TO YEAR(Fakt_Dat) >= rok //wybiera artykuï¿½y, ktï¿½re majï¿½ byï¿½ zachowane, tj. byï¿½y produkowane od tej daty
-
-USE Artykuly NEW          // SELECT 3
-
-// Gaszenie Norm w Pliku TOWARY *************************************
-SELECT 1
-GO TOP
-
-DO WHILE .NOT. EOF()
-
-   Artykul := TOW_ARTNR
-
-// Sprawdza czy artykuï¿½ z TOWARY byï¿½ produkowany w okresie >= rok
-   SELECT 2
-   LOCATE FOR Artykul == Art_Nr
-   IF .NOT. FOUND()
-      SELECT 1
-      ? "   Usuwanie Normy materiaï¿½owej TOWARY : "+Tow_ArtNr + "    pozycja :" + STR(POS,3,0)+ "   "+Mat_ArtNr
-      DELETE
-   ENDIF
-   SELECT 1
-  SKIP
-ENDDO
-
-//Usuwanie Artykuï¿½ï¿½w w pliku Artykuly*************************************************************************
-
-SELECT 3 // Artykuly
-
-GO TOP
-DO WHILE .NOT. EOF()
-
-   Artykul := Numer
-
-// Sprawdza czy artykuï¿½ z Artykuly byï¿½ produkowany w okresie >= rok
-   SELECT 2
-   LOCATE FOR Artykul == Art_Nr
-   IF .NOT. FOUND()
-      SELECT 3
-      ? "   Usuwanie Artykuly :  " + Numer
-      DELETE
-   ENDIF
-   SELECT 3
-   SKIP
-ENDDO
-
-SELECT 1
-SET FILTER TO
-USE
-SELECT 2
-USE
-SELECT 3
-USE
-DO REO
-Rahmen(.F.,.F.,.F.,.F.,.F.,.F.,"USUWANIE NIEPOTRZENBYCH ARTYKULOW.")
-@ 7,9 SAY "Operacje usuwania artykulow pomyslnie zakonczono"
-INKEY()
-RETURN
-
-FUNCTION Czystka2(rok)
-// #include "Box.ch"
-Rahmen(.F.,.F.,.F.,.F.,.F.,.F.,"USUWANIE NIEPOTRZENBYCH ARTYKULOW.")
-@9,10 SAY "Od ktorego roku zachowac artykuly ?...." GET rok PICTURE '9999'
-READ
-
-IF LASTKEY() == 27
-   RETURN
-ENDIF
-@11,10 SAY "Czekaj"
-
-USE Faktury
-COPY STRUCTURE TO Archiv2
-USE
-USE Archiv2
-APPEND FROM Archiv FOR YEAR(Fakt_Dat) >= rok
-APPEND FROM Faktury
-USE
-
-
-USE \mag2\DBF\Towary NEW  // SELECT 1
-
-USE Archiv2 NEW            // SELECT 2
-//SET FILTER TO YEAR(Fakt_Dat) >= rok //wybiera artykuï¿½y, ktï¿½re majï¿½ byï¿½ zachowane, tj. byï¿½y produkowane od tej daty
-INDEX ON Art_Nr TO czystka2
-
-USE Artykuly NEW          // SELECT 3
-
-// Gaszenie Norm w Pliku TOWARY *************************************
-SELECT 1
-GO TOP
-
-DO WHILE .NOT. EOF()
-
-   Artykul := TOW_ARTNR
-
-// Sprawdza czy artykuï¿½ z TOWARY byï¿½ produkowany w okresie >= rok
-   SELECT 2
-
-   IF .NOT. DBSEEK(Artykul)
-      SELECT 1
-      ? "   Usuwanie Normy materiaï¿½owej TOWARY : "+Tow_ArtNr + "    pozycja :" + STR(POS,3,0)+ "   "+Mat_ArtNr
-      DELETE
-   ENDIF
-   SELECT 1
-  SKIP
-ENDDO
-//Usuwanie Artykuï¿½ï¿½w w pliku Artykuly*************************************************************************
-
-SELECT 3 // Artykuly
-
-GO TOP
-DO WHILE .NOT. EOF()
-
-   Artykul := Numer
-
-// Sprawdza czy artykuï¿½ z Artykuly byï¿½ produkowany w okresie >= rok
-   SELECT 2
-   IF .NOT. DBSEEK(Artykul)
-      SELECT 3
-      ? "   Usuwanie Artykuly :  " + Numer
-      DELETE
-   ENDIF
-   SELECT 3
-   SKIP
-ENDDO
-
-SELECT 1
-//******************************************
-SET FILTER TO
-//dbPack()
-//INDEX ON pos       TO \\mag2\Pozycja
-//INDEX ON Tow_ArtNr TO \\mag2\wyrob UNIQUE
-
-*********************************************
-USE
-SELECT 2
-USE
-SELECT 3
-USE
-DO REO
-Rahmen(.F.,.F.,.F.,.F.,.F.,.F.,"USUWANIE NIEPOTRZENBYCH ARTYKULOW.")
-@ 7,9 SAY "Operacje usuwania artykulow pomyslnie zakonczono"
-@ 9,9 SAY "wykonaj reorganizacje w programie magazyn"
-INKEY(100)
-? '10'
 RETURN

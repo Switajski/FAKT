@@ -1,4 +1,4 @@
-// PROCEDURE Archiwum
+PROCEDURE Archiwum
 #include  "def.ch"
 PUBLIC Razem
 PUBLIC fakt_num, Rach_Nr, Fakt_Dat, Dostawa

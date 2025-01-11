@@ -1,0 +1,50 @@
+//
+// Project - Definition - File created by PBUILD Version  1.90.320
+// Date: 22.12.2006 Time: 20:09:01
+//
+
+[PROJECT]
+    COMPILE       = xpp
+    COMPILE_FLAGS = /q
+    DEBUG         = yes
+    GUI           = no
+    LINKER        = alink
+    LINK_FLAGS    = 
+    RC_COMPILE    = arc
+    RC_FLAGS      = /v
+    PROJECT.XPJ
+
+[PROJECT.XPJ]
+    MAG.EXE
+
+[MAG.EXE]
+// $START-AUTODEPEND
+    MAG.OBJ
+    LIB.OBJ
+    EINGABE.OBJ
+    REO.OBJ
+    DOSTAWCY.OBJ
+    USTAW.OBJ
+    TOWARY.OBJ
+    MATERIAL.OBJ
+    STD.CH
+    SET.CH
+    NATMSG.CH
+    GET.CH
+    PROMPT.CH
+    MEMVAR.CH
+    COLLAT.CH
+    GETEXIT.CH
+    APPEVENT.CH
+    SETCURS.CH
+    INKEY.CH
+    DEF.CH
+// $STOP-AUTODEPEND
+    MAG.PRG
+    LIB.PRG
+    EINGABE.PRG
+    REO.PRG
+    DOSTAWCY.PRG
+    USTAW.PRG
+    TOWARY.PRG
+    MATERIAL.PRG

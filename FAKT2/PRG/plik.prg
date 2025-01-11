@@ -1,4 +1,4 @@
-// PROCEDURE plik
+PROCEDURE plik
 rahmen(.T.,.F.,.F.,.F.,.T.,.F.,'wprowadzanie danych o sprzedazy')
 
 USE zamow NEW
@@ -30,7 +30,7 @@ IF .NOT. FOUND()
    ALERT('Zamowienia Nr: '+ ALLTRIM(m->zamowienie)+' brak w bazie')
 ELSE
 
-   @ 10,20 SAY "Generowanie pliku zamï¿½wienia Nr. "+ALLTRIM(m->zamowienie)
+   @ 10,20 SAY "Generowanie pliku zamówienia Nr. "+ALLTRIM(m->zamowienie)
    INKEY(2)
 
 ENDIF

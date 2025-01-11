@@ -1,4 +1,4 @@
-// Function zestawD
+Function zestawD
 #include  "def.ch"
 PARAMETER wysylka
 rahmen(.T.,.F.,.F.,.F.,.T.,.F.,'wprowadzanie danych o sprzedazy')
@@ -14,7 +14,7 @@ SET CONSOLE OFF
 ?? 'Packliste Nr.: '
 ?? wysylka
 
-? 'Pos.  Art. Nr.       Menge      Bestel./Pos.  Verpackung Nr Versand'
+? 'Pos.  Art. Nr.       Menge      Bestel./Pos.  Verpackung Nr'
 ? '___________________________________________________________________'
 
 USE Faktury
@@ -32,7 +32,6 @@ DO WHILE .NOT. EOF()
    ?? SPACE(5)
    ?? LEFT('   '+ALLTRIM(zamowienie)+'/'+ALLTRIM(STR(poz,3,0))+SPACE(20),14)
    ?? STR(karton,5,0)
-   ?? '       '+GLSNumer
    SKIP
 
    IF m->karton <> karton
@@ -48,6 +47,6 @@ SET DEVICE TO SCREEN
 SET PRINTER OFF
 CLOSE DATABASES
 SET CONSOLE OFF
-// RunShell( 'temp.txt', path4)
+RunShell( 'temp.txt', path4)
 
 RETURN NIL

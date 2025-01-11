@@ -1,0 +1,15 @@
+
+Wykaz Operacji do wyrobu: P11K                               
+numer wyrobu            : P11K    
+
+                                             ilosc czas    - s t a w k a -
+numer   nazwa operacji                       /godz (min)    godz. operacja
+___________________________________________________________________________
+   1    Uszyc                                 2.77 21.67    28.00   10.11
+   2    Wypelnic kulkami                      3.00 20.00    28.00    9.33
+   3    Stebnowac                            24.00  2.50    28.00    1.17
+   4    Odszyc elementy                       2.67 22.50    28.00   10.50
+   5    Doszyc dodatkowa tkanine              3.13 19.17    28.00    8.95
+  99    Sprawdzic i zapakowac                12.00  5.00    28.00    2.33
+___________________________________________________________________________
+Suma                                               90.84            42.39

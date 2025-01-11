@@ -1,4 +1,4 @@
-// PROCEDURE intr_DE
+PROCEDURE intr_DE
 
 PRIVATE datei
 
@@ -59,7 +59,7 @@ USE taric  NEW
 
 SELECT Temp4
 
-? ' Zusammenstellung fï¿½r EG-Einkauf fï¿½r INTRASTAT DE fï¿½r Monat '+STR(m->miesiac,2,0)
+? ' Zusammenstellung fr EG-Einkauf fr INTRASTAT DE fr Monat '+STR(m->miesiac,2,0)
 ?
 ? ' Pos. Zoll-Nr      EG-Einkauf          Gewicht '
 ? ' _____________________________________________________'
@@ -112,6 +112,6 @@ SET CONSOLE ON
 
 CLOSE DATABASES
 DELETE FILE "Temp4.dbf"
-// RunShell( 'temp.txt', path4)
+RunShell( 'temp.txt', path4)
 
 RETURN

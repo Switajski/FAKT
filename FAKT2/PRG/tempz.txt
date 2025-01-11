@@ -1,36 +1,446 @@
      
-     Rachunek Numer: 7914     
-     Data rachunku : 10.02.2018     
-          
-     Numer wysylki : 7914     
-     Data wysylki  : 10.02.2018     
+     Rachunek Numer: 10324     
+     Data rachunku : 19.09.2024     
+     Data wysylki  : 19.09.2024     
           
      Sprzedajacy   :      
-     Baby's World spolka z o.o.  Kokocko 43- PL 86260 Unislaw     
+     Baby's World   ul. Przemyslowa 8- PL 86-260 Kokocko     
      NIP:   PL 8751003090   REGON: 870314621     
-     Konto nr: 1217 5002 9304- Kredyt Bank Chelmno     
      IBAN: PL 35150017511217500402400000  BIC(SWIFT): KRDBPLPW     
           
      Kupujacy      :      
-     Herrn Schwarzer, Alfred     
-     Am Krummen Acker 7, 36088 Huenfeld-2,      
-     Numer Identyfikacyjny EU :                         
+     Priebes GmbH      
+     Otto-Hahn-Strasse 6, 71642 Ludwigsburg, Deutschland     
+     Numer Identyfikacyjny EU :DE3282433950             
           
      Sposob zaplaty: zgodnie z umowa     
-     Sposob dostawy: odbior wlasny     
+     Sposob dostawy: koszty wysylki dzielone     
           
      Poz. Art.Nr.   Nazwa Artykulu                                        Ilosc       Cena   Wartosc     
      _______________________________________________________________________________________________     
           
-       1. TD02      Dederon art. nr. 6221 kolor czarny 1178               110.00      0.88     96.80     
+       1. P05-793   KAI wkˆadka z tkaniny waffel grau frotta grau          
+                    lamowka grau 68                                         1.00      4.22      4.22     
+          
+       2. P05-795   KAI wkˆadka z tkaniny waffel green/frotta grau         
+                    lamowka mandel 115                                      1.00      4.22      4.22     
+          
+       3. P07-780   COOLAIR 1-3 wkladka z tkaniny waffel stone/ masch      
+                    anthra                                                 
+                    lamowka grau 17                                         7.00      4.48     31.36     
+          
+       4. P07-781   COOLAIR 1-3 wkladka z tkaniny waffel jade/ masch       
+                    gold                                                   
+                    lamowka green 117                                       3.00      4.48     13.44     
+          
+       5. P09-704   NORA poduszka z wata musselin grey                      2.00      2.30      4.60     
+          
+       6. P09-705   NORA poduszka z wata musselin green                     3.00      2.30      6.90     
+          
+       7. P09-723   NORA poduszka z wata mini dots terracotta               2.00      2.30      4.60     
+          
+       8. P09-724   NORA poduszka z wata silikonowa BW mini dots           
+                    ocre                                                    1.00      2.30      2.30     
+          
+       9. P09-732   NORA poduszka z wata silikonowa BW mini dots           
+                    salbei                                                  2.00      2.30      4.60     
+          
+      10. P09-779   NORA poduszka z wata silikonowa BW waffel natur         6.00      2.30     13.80     
+          
+      11. P09-780   NORA poduszka z wata silikonowa waffel stone            2.00      2.30      4.60     
+          
+      12. P09-793   NORA poduszka z wata silikonowa waffel grey             3.00      2.30      6.90     
+          
+      13. P09-794   NORA poduszka z wata silikonowa waffel ocean            4.00      2.30      9.20     
+          
+      14. P09-795   NORA poduszka z wata silikonowa waffel green            2.00      2.30      4.60     
+          
+      15. P09-796   NORA poduszka z wata silikonowa waffel rose             3.00      2.30      6.90     
+          
+      16. P09-808   NORA poduszka z wata silikonowa BW bagger               4.00      2.30      9.20     
+          
+      17. P10-766   MIA COOLAIR  wkˆadka BW jade / masch gold              
+                    lamowka beige 26                                        3.00      5.31     15.93     
+          
+      18. P14-791   LOTTE wkladka z tkaniny BW ginko platin                
+                    frotta grau                                            
+                    lamowka grau 14                                         1.00      4.48      4.48     
+          
+      19. P14-793   LOTTE wkladka z tkaniny waffel grey                    
+                    frotta grau                                            
+                    lamowka grau 68                                         5.00      4.48     22.40     
+          
+      20. P14-794   LOTTE wkladka z tkaniny waffel ocean                   
+                    frotta grau                                            
+                    lamowka jersey stahl blau 10                            4.00      4.48     17.92     
+          
+      21. P14-795   LOTTE wkladka z tkaniny waffel green                   
+                    frotta grau                                            
+                    lamowka mandel 115                                      6.00      4.48     26.88     
+          
+      22. P14-796   LOTTE wkladka z tkaniny waffel rose                    
+                    frotta grau                                            
+                    lamowka grau 14                                         4.00      4.48     17.92     
+          
+      23. P16-723-M WETBAGS mini dots terracotta  + cerata                 
+                    l. grau 14                                             
+                     M                                                      1.00      2.60      2.60     
+          
+      24. P16-723-S WETBAGS heide  + cerata                                
+                    l. grau 17                                             
+                    S                                                       1.00      2.10      2.10     
+          
+      25. P16-724-S WETBAGS mini dots ocre  + cerata                       
+                    l. grau 14                                             
+                    S                                                       1.00      2.10      2.10     
+          
+      26. P16-732-M WETBAGS mini dots salbei  + cerata                     
+                    l. grau 14                                             
+                     M                                                      1.00      2.60      2.60     
+          
+      27. P16-732-S WETBAGS mini dots salbei  + cerata                     
+                    l. grau 14                                             
+                    S                                                       1.00      2.10      2.10     
+          
+      28. P16-818-M WETBAGS canvas salbei  + cerata                        
+                    l. grau 13                                             
+                     M                                                      2.00      2.60      5.20     
+          
+      29. P16-818-S WETBAGS canvas salbei  + cerata                        
+                    l. grau 13                                             
+                    S                                                       1.00      2.10      2.10     
+          
+      30. P16-819-M WETBAGS canva jeans  + cerata                          
+                    l. grau 13                                             
+                     M                                                      2.00      2.60      5.20     
+          
+      31. P16-819-S WETBAGS canva jeans  + cerata                          
+                    l. grau 13                                             
+                    S                                                       1.00      2.10      2.10     
+          
+      32. P16-820-M WETBAGS canva grey  + cerata                           
+                    l. grau 88                                             
+                     M                                                      1.00      2.60      2.60     
+          
+      33. P16-820-S WETBAGS canva jeans  + cerata                          
+                    l. grau 88                                             
+                    S                                                       2.00      2.10      4.20     
+          
+      34. P20-838   ZOI Spiworek  MF anthra, boucle beige                 257.00     11.90   3058.30     
+          
+      35. P22-680   DIETER, poduszka z wata silikonowa BW ripp             
+                    arctic                                                  5.00      2.23     11.15     
+          
+      36. P22-684   DIETER, poduszka z wata silikonowa BW foret             5.00      1.65      8.25     
+          
+      37. P22-704   DIETER, poduszka z wata silikonowa musselin            
+                    grey                                                    4.00      2.50     10.00     
+          
+      38. P22-705   DIETER, poduszka z wata silikonowa musselin            
+                    green                                                   6.00      2.50     15.00     
+          
+      39. P22-724   DIETER, poduszka z wata silikonowa mini dots           
+                    ocre                                                   
+                    lamowka weiss                                           1.00      1.80      1.80     
+          
+      40. P22-735   DIETER, poduszka z wata silikonowa ginko green         
+                    lamowka weiss                                          13.00      1.80     23.40     
+          
+      41. P22-791   DIETER poduszka z wata silikonowa BW ginko             
+                    platin                                                  1.00      1.65      1.65     
+          
+      42. P22-793   DIETER, poduszka z wata silikonowa waffel grey         
+                    lamowka weiss                                           4.00      1.80      7.20     
+          
+      43. P22-794   DIETER, poduszka z wata silikonowa waffel ocean        
+                    lamowka weiss                                           6.00      1.80     10.80     
+          
+      44. P22-795   DIETER, poduszka z wata silikonowa waffel green        
+                    lamowka weiss                                           4.00      1.80      7.20     
+          
+      45. P22-808   DIETER, poduszka z wata silikonowa bagger              
+                    lamowka weiss                                           2.00      1.80      3.60     
+          
+      46. P25-732   MEIKE wkˆadka z tkaniny BW mini dots salbei+frota      
+                    grau, lamowka h'grau 14                                 8.00      2.83     22.64     
+          
+      47. P27-702   JOHANNA Oslona p/sloneczna  musselin arctic            
+                    sznur grau                                             
+                    lamowka grau 14                                         4.00      6.45     25.80     
+          
+      48. P27-704   JOHANNA Oslona p/sloneczna  musselin grau              
+                    sznur grau                                             
+                    lamowka grau 14                                         4.00      6.45     25.80     
+          
+      49. P27-705   JOHANNA Oslona p/sloneczna  musselin green             
+                    sznur grau                                             
+                    lamowka grau 14                                         2.00      6.45     12.90     
+          
+      50. P27-718   NNA Oslona p/sloneczna  musselin altrose               
+                    sznur grau                                             
+                    lamowka grau 14                                         3.00      6.45     19.35     
+          
+      51. P27-719   JOHANNA Oslona p/sloneczna  musselin granit            
+                    sznur d'grau                                           
+                    lamowka grau 17                                         4.00      6.45     25.80     
+          
+      52. P27-720   JOHANNA Oslona p/sloneczna  musselin terracotta        
+                    sznur grau                                             
+                    lamowka grau 14                                         1.00      6.45      6.45     
+          
+      53. P27-797   JOHANNA Oslona p/sloneczna  musselin beige             
+                    sznur grau                                             
+                    lamowka kiesel                                          4.00      6.45     25.80     
+          
+      54. P31-766   MATHILDA COOLAIR  wkˆadka BW jade  / masch gold        
+                    lamowka beige 26                                        1.00      6.85      6.85     
+          
+      55. P33-723   TOM wkladka z tkaniny BW mini dots terracotta,         
+                    frotta grau                                            
+                    lamowka grau 14                                         3.00      4.60     13.80     
+          
+      56. P33-724   TOM wkladka z tkaniny BW mini dots ocre,               
+                    frotta grau                                            
+                    lamowka grau 14                                         3.00      4.60     13.80     
+          
+      57. P33-735   TOM wkladka z tkaniny BW ginko green                   
+                    frotta grau                                            
+                    lamowka mandel 115                                      4.00      4.60     18.40     
+          
+      58. P42-815   KLAUS, poduszka z wata silikonowa wafel natur /        
+                    salbei                                                 
+                    2m                                                      1.00      5.30      5.30     
+          
+      59. P44-381   Keil EMIL Gurtpolster stars grau                       
+                    lamowka hellgrau                                        5.00      5.60     28.00     
+          
+      60. P44-617   Keil EMIL Gurtpolster prisma mint                      
+                    lamowka mandel 115                                      1.00      5.60      5.60     
+          
+      61. P44-704   Keil EMIL Gurtpolster musselin grey                    
+                    lamowka grau 14                                         4.00      5.60     22.40     
+          
+      62. P44-705   Keil EMIL Gurtpolster musselin green                   
+                    lamowka grau 14                                         3.00      5.60     16.80     
+          
+      63. P44-718   Keil EMIL Gurtpolster musselin altrose                 
+                    lamowka grau 14                                         4.00      5.60     22.40     
+          
+      64. P44-723   Keil EMIL Gurtpolster mini dots terracotta             
+                    lamowka grau 14                                         1.00      5.60      5.60     
+          
+      65. P44-794   Keil EMIL Gurtpolster waffel ocean                     
+                    lamowka stahl blau 10                                   5.00      5.60     28.00     
+          
+      66. P44-797   Keil EMIL Gurtpolster musselin beige                   
+                    lamowka kiesel                                          5.00      5.60     28.00     
+          
+      67. P52-731   FALKO COOLAIR wkladka anthra/ grau                     
+                    l. grau 17                                              1.00      7.49      7.49     
+          
+      68. P54-695   CLAUSI, poduszka z wata silikonowa BW bunt             
+                    prisma grau  biornen                                    1.00      3.00      3.00     
+          
+      69. P54-726   CLAUSI, poduszka z wata silikonowa BW patch mini       
+                    dots kaki/ocre                                          1.00      3.00      3.00     
+          
+      70. P54-745   CLAUSI, poduszka z wata silikonowa BW patch foret/     
+                    rosewood                                                1.00      3.00      3.00     
+          
+      71. P54-813   CLAUSI, poduszka z wata silikonowa patch wafel         
+                    grey/ocre                                               1.00      3.80      3.80     
+          
+      72. P54-816   CLAUSI, poduszka z wata silikonowa patch wafel         
+                    ocean/samt arctic                                       1.00      3.80      3.80     
+          
+      73. P55-719   SUNNY daszek musselin graphit                          
+                    lamowka grau 17                                         2.00      5.40     10.80     
+          
+      74. P55-797   SUNNY daszek musselin beige                            
+                    lamowka jersey kiesel                                   2.00      5.40     10.80     
+          
+      75. P63-768   SOREN Oslona p/sloneczna  musselin green               
+                    gumka taupe                                            
+                    lamowka grau 14                                         2.00      4.14      8.28     
+          
+      76. P63-769   SOREN Oslona p/sloneczna  musselin grey                
+                    gumka grau                                             
+                    lamowka grau 14                                         1.00      4.14      4.14     
+          
+      77. P63-771   SOREN Oslona p/sloneczna  musselin granit              
+                    gumka grau                                             
+                    lamowka grau 17                                         1.00      4.14      4.14     
+          
+      78. P63-797   SOREN Oslona p/sloneczna  musselin beige               
+                    gumka grau                                             
+                    lamowka kiesel                                          1.00      4.14      4.14     
+          
+      79. P64-381   SVEN gurtpolster BW stars grau                         
+                    lamowka grau 88                                         3.00      1.31      3.93     
+          
+      80. P64-680   SVEN gurtpolster BW ripp arctic                        
+                    lamowka grau                                            7.00      1.31      9.17     
+          
+      81. P64-682   SVEN gurtpolster BW heide                              
+                    lamowka d'grau 17                                       1.00      1.31      1.31     
+          
+      82. P64-686   SVEN gurtpolster BW swan                               
+                    lamowka mint 115                                       10.00      1.31     13.10     
+          
+      83. P64-724   SVEN gurtpolster BW mini dots ocre                     
+                    lamowka grau 14                                         1.00      1.31      1.31     
+          
+      84. P64-735   SVEN gurtpolster BW ginko green                        
+                    lamowka mandel 115                                      3.00      1.31      3.93     
+          
+      85. P64-793   SVEN gurtpolster waffel grey                           
+                    lamowka grau 14                                         4.00      1.31      5.24     
+          
+      86. P64-794   SVEN gurtpolster waffel ocean                          
+                    lamowka stahl blau 10                                   3.00      1.31      3.93     
+          
+      87. P64-795   SVEN gurtpolster waffel green                          
+                    lamowka mandel 115                                      5.00      1.31      6.55     
+          
+      88. P68-705   DAISY daszek BW musselin grun                          
+                    lamowka grau 14                                         1.00      6.40      6.40     
+          
+      89. P68-720   DAISY daszek BW musselin terracota                     
+                    lamowka grau 14                                         1.00      6.40      6.40     
+          
+      90. P69-824   COOLAIR 1-3 wkˆadka z tkanin bjornen masch             
+                    grau                                                   
+                    lamowka beige 26                                        5.00      4.78     23.90     
+          
+      91. P69-829   COOLAIR 1-3 wkˆadka z tkanin bagger, masch             
+                    grau                                                   
+                    lamowka grau 13                                         5.00      4.78     23.90     
+          
+      92. P71-779   WALTER-kocyk wafel natur + frotta grau                 
+                    lamowka taupe                                           1.00     12.62     12.62     
+          
+      93. P71-793   WALTER-kocyk wafel grau + frotta grau                  
+                    lamowka grau 68                                         2.00     12.62     25.24     
+          
+      94. P71-806   WALTER-kocyk welna natur + wawel natur                 
+                    lamowka kiesel                                          2.00     12.62     25.24     
+          
+      95. P71-807   WALTER-kocyk welna grau + wawel stone                  
+                    lamowka anthra                                          1.00     12.62     12.62     
+          
+      96. P73-824   COOLAIR 1 wkˆadka z tkanin bjornen masch               
+                    grau                                                   
+                    lamowka beige 26                                        5.00      4.07     20.35     
+          
+      97. P73-829   COOLAIR 1 wkˆadka z tkanin bagger, masch               
+                    grau                                                   
+                    lamowka grau 13                                         5.00      4.07     20.35     
+          
+      98. P75-731   COOLAIR 1-3 wkladka z tkaniny mash anthra/sweat        
+                    anthra, lamowka grau                                    3.00      4.78     14.34     
+          
+      99. P81-704   LOLA wkˆadka z tkaniny BW musselin grey+frotta         
+                    grau, lamowka grau 14                                   4.00      3.39     13.56     
+          
+     100. P81-705   LOLA wkˆadka z tkaniny BW musselin grun+frotta         
+                    grau, lamowka grau 14                                   4.00      3.39     13.56     
+          
+     101. P81-718   LOLA wkˆadka z tkaniny BW musselin terracota+frott     
+                    grau, lamowka grau 14                                   1.00      3.39      3.39     
+          
+     102. P81-797   LOLA wkˆadka z tkaniny BW musselin beige+frott         
+                    grau, lamowka kiesel                                    2.00      3.39      6.78     
+          
+     103. P81-798   LOLA wkˆadka z tkaniny BW musselin sepia+frotta        
+                    grau, lamowka jersey terakotta                          1.00      3.39      3.39     
+          
+     104. P85-399   ARTUR  gurtpolster BW dots rose                        
+                    lamowka h'grau                                          2.00      1.10      2.20     
+          
+     105. P85-575   ARTUR  gurtpolster BW flamingos aqua                   
+                    lamowka rose 76                                         3.00      1.10      3.30     
+          
+     106. P85-681   ARTUR  gurtpolster BW ripp rose                        
+                    lamowka h'grau                                          2.00      1.10      2.20     
+          
+     107. P85-684   ARTUR  gurtpolster BW foret                            
+                    lamowka h'grau                                          5.00      1.10      5.50     
+          
+     108. P85-703   ARTUR  gurtpolster musselin senf                       
+                    lamowka grau 14                                         2.00      1.26      2.52     
+          
+     109. P85-704   ARTUR  gurtpolster musselin grau                       
+                    lamowka grau 14                                        11.00      1.26     13.86     
+          
+     110. P85-705   ARTUR  gurtpolster musselin green                      
+                    lamowka grau 14                                         8.00      1.26     10.08     
+          
+     111. P85-729   ARTUR gurtpolster BW mash grau                         
+                    lamowka taupe 18807                                     7.00      1.10      7.70     
+          
+     112. P85-730   ARTUR gurtpolster BW mash blau                         
+                    lamowka grau 14                                        11.00      1.10     12.10     
+          
+     113. P85-791   ARTUR  gurtpolster ginko platin                        
+                    lamowka grau 14                                         5.00      1.26      6.30     
+          
+     114. P85-792   ARTUR  gurtpolster animali grey                        
+                    lamowka grau 13                                         4.00      1.26      5.04     
+          
+     115. P85-793   ARTUR  gurtpolster wafel grey                          
+                    lamowka h'grau 68                                       7.00      1.10      7.70     
+          
+     116. P85-794   ARTUR  gurtpolster wafel ocean                         
+                    lamowka jersey stahl blau 10                            7.00      1.10      7.70     
+          
+     117. P85-795   ARTUR  gurtpolster wafel green                         
+                    lamowka 115                                             7.00      1.10      7.70     
+          
+     118. P85-797   ARTUR  gurtpolster musselin beige                      
+                    lamowka jersey kiesel                                   7.00      1.10      7.70     
+          
+     119. P85-798   ARTUR  gurtpolster musselin sepia                      
+                    lamowka jersey rot                                      4.00      1.10      4.40     
+          
+     120. P87-821-M ROLLUP WETBAGS canvas  + cerata                        
+                    l. grau 13                                             
+                    M                                                       1.00      3.25      3.25     
+          
+     121. P88-731   COOLAIR 1 wkˆadka z tkaniny mash anthra/sweat          
+                    anthra, lamowka grau                                    3.00      4.07     12.21     
+          
+     122. P89-735   KONRAD wkladka BW ginko green, frota grau              
+                    lamowka h'grau 14                                       3.00      7.49     22.47     
+          
+     123. P89-791   KONRAD wkladka ginko platin / frotta grau              
+                    l. grau 14                                              2.00      7.49     14.98     
+          
+     124. P90-731   MIA COOLAIR  wkˆadka mash anthra, jersey citadel       
+                    lamowka grau 8859                                       3.00      5.28     15.84     
+          
+     125. P92-729   COOLAIR O wkladka z tkaniny mash anthra + sweat        
+                    anthra,   lamowka grau                                  1.00      3.20      3.20     
+          
+     126. P92-731   COOLAIR O wkladka z tkaniny mash anthra + sweat        
+                    anthra,   lamowka grau                                  1.00      3.20      3.20     
+          
+     127. P92-780   COOLAIR O wkladka z tkaniny waffel stone, mash         
+                    anthra                                                 
+                    lamowka grau 17                                         3.00      3.20      9.60     
+          
+     128. P92-781   COOLAIR O wkladka z tkaniny waffel jade, mash          
+                    gold                                                   
+                    lamowka grun 117                                        2.00      3.20      6.40     
+          
+     129. VER_GLS  AWysylka GLS do Niemiec                                 85.00      4.00    340.00     
           
      _______________________________________________________________________________________________     
           
-                                                               Razem Wartosc Rachunku EUR:     96.80     
+                                                               Razem Wartosc Rachunku EUR:   4691.76     
            
-     Kurs PLN/EUR                                                                             4.0000     
-     Wartosc Rachunku w PLN                                                                   387.20     
+     Kurs PLN/EUR                                                                             0.0000     
+     Wartosc Rachunku w PLN                                                                     0.00     
           
      W Polsce faktura bez podatku VAT (sprzedaz wewnatrzwspolnotowa).     
-     Odbiorca towaru o numerze identyfikacyjnym  jest zobowiazany     
+     Odbiorca towaru o numerze identyfikacyjnym DE3282433950 jest zobowiazany     
      do rozliczenia VAT-u w kraju w ktorym ma siedzibe.

@@ -1,0 +1,31 @@
+//
+// Project - Definition - File created by PBUILD Version  1.90.320
+// Date: 18.07.2007 Time: 11:34:34
+//
+
+[PROJECT]
+    COMPILE       = xpp
+    COMPILE_FLAGS = /q
+    DEBUG         = yes
+    GUI           = no
+    LINKER        = alink
+    LINK_FLAGS    = 
+    RC_COMPILE    = arc
+    RC_FLAGS      = /v
+    PROJECT.XPJ
+
+[PROJECT.XPJ]
+    KALK.EXE
+
+[KALK.EXE]
+// $START-AUTODEPEND
+    KALK.OBJ
+    STD.CH
+    SET.CH
+    NATMSG.CH
+    GET.CH
+    PROMPT.CH
+    MEMVAR.CH
+    COLLAT.CH
+// $STOP-AUTODEPEND
+    KALK.PRG

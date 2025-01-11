@@ -1,0 +1,1 @@
+m->dostawca,    m->firma, m->firma2  := firma2, m->ulica, m->nr_domu, m->kod, m->miasto, m->telefon, m->fax

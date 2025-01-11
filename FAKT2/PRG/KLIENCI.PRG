@@ -1,4 +1,4 @@
-// PROCEDURE klienci
+PROCEDURE klienci
 @ 5,1 CLEAR TO 22,69
 USE Klienci INDEX kl_numer,ort
 m->kli_numer := 0

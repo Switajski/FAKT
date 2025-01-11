@@ -1,0 +1,29 @@
+     
+     ------------------------------------------------------------------------------     
+     ERROR LOG of "D:\PLACE\SYS.EXE" Date: 22.04.24 14:06:09     
+          
+     Xbase++ version     : Xbase++ (R) Version 1.90.320     
+     Operating system    : Windows  06.02 Build 09200     
+     ------------------------------------------------------------------------------     
+     oError:args         :     
+                -> NIL     
+     oError:canDefault   : N     
+     oError:canRetry     : Y     
+     oError:canSubstitute: N     
+     oError:cargo        : NIL     
+     oError:description  : Unknown symbol for database field     
+     oError:filename     :      
+     oError:genCode      :         65     
+     oError:operation    : Data_First     
+     oError:osCode       :          0     
+     oError:severity     :          2     
+     oError:subCode      :       8027     
+     oError:subSystem    : BASE     
+     oError:thread       :          1     
+     oError:tries        :          1     
+     ------------------------------------------------------------------------------     
+     CALLSTACK:     
+     ------------------------------------------------------------------------------     
+     Called from WYROBY(45)     
+     Called from MAIN(98)     
+     

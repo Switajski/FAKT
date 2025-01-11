@@ -1,4 +1,4 @@
-// PROCEDURE Rach_Zb
+PROCEDURE Rach_Zb
 #include "def.ch"
 PUBLIC Razem, Zalacznik
 PUBLIC fakt_num, Rach_Nr, Fakt_Dat, Dostawa, Kli_Numer
@@ -100,8 +100,8 @@ SET PRINTER ON
 ?  'Rachunek Numer: '
 ?? alltrim(str(m->Rach_Nr,5,0))
 ?  'Data rachunku : '+DTOC(m->fakt_dat)
-//?
-//?  'Numer wysylki : '+ALLTRIM(STR(m->fakt_num,5,0))
+?
+?  'Numer wysylki : '+ALLTRIM(STR(m->fakt_num,5,0))
 ?  'Data wysylki  : '+DTOC(m->dostawa)
 ?  ''
 
@@ -109,7 +109,7 @@ SET PRINTER ON
 ?  firma1+'  '+  firma2+'- '+firma3
 ?  'NIP:   '+NIP
 ?? '   REGON: '+REGON
-//?  konto1+konto2
+?  konto1+konto2
 ?  'IBAN: '+iban+'  BIC(SWIFT): '+BIC
 ?
 ?  'Kupujacy      : '
@@ -207,7 +207,7 @@ ENDDO
 SET CONSOLE ON
 
 DELETE FILE "Temp.dbf"
-// RunShell( 'tempz.txt', path4)
+RunShell( 'tempz.txt', path4)
 
 RETURN
 

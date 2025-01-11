@@ -1,14 +1,6 @@
-
 PROCEDURE Main
 PRIVATE odpow
 PUBLIC Nr_Fakt, Faktor, Pfad, filter, path0, path1, path2, path3, path4, path5, path6, path7, Rachunek
-
-? '1'
-
-// #include "LIB.prg"
-
-? 'po include'
-
 SET DATE TO GERMAN
 SET DELETED ON
 SET CONFIRM ON
@@ -17,26 +9,9 @@ SET EXCLUSIVE ON
 SET SCOREBOARD OFF
 SET CENTURY ON
 SET MARGIN TO 5
-
 SETFUNCTION(9,CHR(27))
-? 'przed definicja setfunction'
-FUNCTION SETFUNCTION( nFKey, cString )
-
-   nFKey := IIf( nFKey == 1, 28, 1 - nFKey )
-
-   IF Len( cString) == 0
-      RETURN SetKey( nFKey, NIL)
-   ENDIF
-   ? 'po definicji setfunction'
-   RETURN SetKey( nFKey,{|| __Keyboard( cString)})
-   ? 'po zamknieciu funkcji'
-
-RETURN
-
-? 'przed filtrem'
-
 filter := ''
-rok := 0
+
 USE Ustaw
 path0     := ALLTRIM(ustawienia)
 path1     := ALLTRIM(artykuly)
@@ -65,14 +40,14 @@ Xg := 2
 Yd := 22
 Xd := 77
 
-// USE standart
+//USE standart
 
 titel := "Wprowadzanie Danych o Pakietach"
 titel1:= 'menue'
 
 DO WHILE .T.
    odpow := ' 0'
-   // Rahmen(.F.,.F.,.F.,.F.,.T.,.F.,"Wybor rodzaju czynnosci")
+   Rahmen(.F.,.F.,.F.,.F.,.T.,.F.,"Wybor rodzaju czynnosci")
 
    SET COLOR TO &farb1
    CLOSE DATABASES
@@ -92,19 +67,16 @@ DO WHILE .T.
    @ 18,5 SAY "dokumenty polskie (rach, spec).(8)"
    @ 19,5 SAY "rachunek skomasowany niemiecki.(9)"
    @ 20,5 SAY "Preisliste.....................(10)"
-//   @ 21,5 SAY "Packliste......................(11)"
 //   @ 21,5 SAY "Packliste do wysylki...........(16)"
 
 
    @  5,43 SAY "ORGANIZACYJNE:"                  COLOR farb4
-   @  7,45 SAY "ustawienia dostepu.........(12)"
-   @  8,45 SAY "reorganizacja danych.......(13)"
-   @  9,45 SAY "archiwowanie wysylek.......(14)"
-   @ 10,45 SAY "archiwowanie zamowien......(15)"
-   @ 11,45 SAY "rozliczanie zamowien.......(16)"
-   @ 12,45 SAY "plik zamï¿½wienia............(17)"
-   @ 13,45 SAY "wczytaj zamï¿½wienie.........(18)"
-   @ 14,45 SAY "usuwanie starych artykulow.(19)"
+   @  7,45 SAY "ustawienia dostepu.........(11)"
+   @  8,45 SAY "reorganizacja danych.......(12)"
+   @  9,45 SAY "archiwowanie wysylek.......(13)"
+   @ 10,45 SAY "archiwowanie zamowien......(14)"
+   @ 11,45 SAY "rozliczanie zamowien.......(15)"
+   @ 12,45 SAY "plik zamówienia............(16)"
    @ 19,45 SAY "zakonczyc program...........(0)"
    @ 22,45 SAY "Wybierz opcje............" GET odpow PICTURE '@K'
    READ
@@ -119,50 +91,44 @@ DO WHILE .T.
    odpow := ALLTRIM(odpow)
 
    DO CASE
-      // CASE odpow == '1'
-      //    DO ARTYKULY
-      // CASE odpow == '2'
-      //    DO KLIENCI
-      // CASE odpow == '3'
-      //    DO RACHUNEK
-      // CASE odpow == '4'
-      //    DO ZAMOW
+      CASE odpow == '1'
+         DO artykuly
+      CASE odpow == '2'
+         DO klienci
+      CASE odpow == '3'
+         DO rachunek
+      CASE odpow == '4'
+         DO zamow
 
-      // CASE odpow == '5'
-      //    DO INTR_PL
-      // CASE odpow == '6'
-      //    DO INTR_DE
-      // CASE odpow == '7'
-      //    DO LIEFER2
-      // CASE odpow == '8'
-      //    DO rach_zb
-      //    DO zestaw
-      //    IF UPPER(m->Zalacznik) == 'T'
-      //       DO zalacz_2
-      //    ENDIF
-      // CASE odpow == '9'
-      //    DO RECH_DE
-      // CASE odpow == '10'
-      //    DO PREISLST
-      // CASE odpow == '11'
-      //    DO ZESTAWD
-      // CASE odpow == '12'
-      //    DO ustaw
-      // CASE odpow == '13'
-      //    DO REO
-      // CASE odpow == '14'
-      //    DO ArchZam
-      // CASE odpow == '15'
-      //    DO archiwum
+      CASE odpow == '5'
+         DO intr_PL
+      CASE odpow == '6'
+         DO intr_DE
+      CASE odpow == '7'
+         DO Liefer2
+      CASE odpow == '8'
+         DO rach_zb
+         DO zestaw
+         IF UPPER(m->Zalacznik) == 'T'
+            DO zalacz_2
+         ENDIF
+      CASE odpow == '9'
+         DO rech_de
+      CASE odpow == '10'
+         DO preislst
+      CASE odpow == '11'
+         DO ustaw
+      CASE odpow == '12'
+         DO reo
+      CASE odpow == '14'
+         DO ArchZam
+      CASE odpow == '13'
+         DO archiwum
 
-      // CASE odpow == '16'
-      //    DO Zam_NZ
-      // CASE odpow == '17'
-      //    DO Plik
-      // CASE odpow == '18'
-      //    DO Wczytaj1
-      // CASE odpow == '19'
-      //    czystka2(rok)     // procedura w lib.prg
+      CASE odpow == '15'
+         DO Zam_NZ
+      CASE odpow == '16'
+         DO Plik
       CASE odpow == '0'
          SET COLOR TO
          EXIT

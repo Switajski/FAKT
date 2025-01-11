@@ -1,4 +1,4 @@
-// PROCEDURE reo
+PROCEDURE reo
 #include "def.ch"
 PRIVATE korekta, rek
 
