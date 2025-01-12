@@ -2,7 +2,7 @@ PROCEDURE dostawcy
 LOCAL nowy
 
 @ 5,1 CLEAR TO 22,69
-USE dostawcy INDEX dostawca, firma
+USE Dostawcy INDEX dostawca, firma
 
 m->Dostawca := SPACE(10)
 
@@ -10,7 +10,8 @@ SET KEY -1 TO fakts2
 
 rahmen(.T.,.F.,.F.,.F.,.T.,.F.,'wprowadzanie danych o dostawcach')
 
-SETFUNCTION(9,CHR(27))
+// SETFUNCTION(9,CHR(27))
+SET FUNCTION 9 TO Chr(27)
 
 @ 5,7 SAY "dostawca........." GET m->dostawca
 READ
@@ -55,13 +56,13 @@ ENDIF
 
 //SETFUNCTION( 10,CHR(23))
 //SETFUNCTION(  9,CHR(27))
-//SET KEY -7 TO UsunDostawce
 
 abbruch := .F.
 rahmen(.F.,.F.,.F.,.T.,.T.,.T.,'wprowadzanie danych o dostawcach')
 
-SETFUNCTION( 10,CHR(23))
-SETFUNCTION(  9,CHR(27))
+// SETFUNCTION( 10,CHR(23))
+SET FUNCTION 10 Chr(23)
+SET FUNCTION  9 Chr(27)
 SET KEY -7 TO UsunDostawce
 
 
