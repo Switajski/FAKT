@@ -2,15 +2,14 @@
 
 The Original of [FinanzBuchhaltung]([url](https://github.com/switajski/finanzbuchhaltung)) and other programs.
 
-## Uzywaj Codespace do kodowania
+## Utworz srodowsko do kompilacji i uruchamiania kodu clippera uzywajac CODESPACE
 
-Tworz Codespace jak tutaj w screenshocie:
-
+Dojscie do codespace jak tutaj w screenshocie:
 <img width="1150" alt="image" src="https://github.com/user-attachments/assets/20c02dd5-fbb7-42a3-b53e-8bf053879c64" />
 
-wykonaj w terminalu:
+Urochom srodowsko do kompilacji i uruchamiania kodu clippera: wykonaj w terminalu: `./start-container.sh` 
 <img width="842" alt="image" src="https://github.com/user-attachments/assets/61b9ac1e-3a39-4235-9f8d-b73bb65c5e67" />
-`./start-container.sh` zeby stworzyc srodowsko do kompilacji kodu clippera (pliki z "PRG"). Pojawi sie bash srodowiska: 
+
 <img width="932" alt="image" src="https://github.com/user-attachments/assets/8994d59b-5361-4264-8073-53a159eb109d" />
 kompiluj kod `hbm2k mag.prg`
 <img width="844" alt="image" src="https://github.com/user-attachments/assets/79839827-66d2-4b3d-a14c-d8dd4a2a77f8" />
