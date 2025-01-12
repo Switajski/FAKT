@@ -20,7 +20,7 @@ IF LASTKEY() == 27
    USE
    RETURN
 ENDIF
-SET INDEX TO dostawca, Firma
+SET INDEX TO dostawca, firma
 
 LOCATE FOR m->dostawca == dostawca
 

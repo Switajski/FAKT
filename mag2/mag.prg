@@ -15,7 +15,7 @@ PUBLIC Yg, Xg, Yd, Xd, var1, path1, path2, path3, path4, Art
 
 **** ustawienia sciezek dostepu
 
-USE USTAW
+USE ustaw
 path1 := ALLTRIM(artykuly)
 path2 := ALLTRIM(DBF)
 path3 := ALLTRIM(Runtime)
@@ -108,7 +108,7 @@ DO WHILE wybor <> 0
       CASE wybor == 5
          DO KopiaWyr
       CASE wybor == 6
-         DO Eingabe
+         DO eingabe
       CASE wybor == 7
          DO zdejmij
       CASE wybor == 8
@@ -119,7 +119,7 @@ DO WHILE wybor <> 0
       CASE wybor == 10
          DO DrukStan
       CASE wybor == 11
-         DO DrukKart
+         DO drukkart
       CASE wybor == 12
          DO Ruch
 
