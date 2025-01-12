@@ -64,7 +64,7 @@ DO WHILE .T.
    //SetKey( K_F10,{|| _Keyboard( CHR(23) )})
 
    SETFUNCTION(9,CHR(27))
-   SETFUNCTION(10,CHR(23))
+   SET FUNCTION 10 TO CHR(23)
 
    abbruch := .F.
    koniec  := .F.
@@ -95,7 +95,7 @@ DO WHILE .T.
 
    ENDDO
 
-   SET INDEX TO MatNr, Nazwa
+   SET INDEX TO MatNr, nazwa
 
    IF .NOT. abbruch
 
